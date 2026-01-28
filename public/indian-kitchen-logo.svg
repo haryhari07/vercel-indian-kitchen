@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indian Kitchen Logo">
+  <defs>
+    <linearGradient id="potGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f37021"/>
+      <stop offset="100%" stop-color="#d32f2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#fff7f2"/>
+  <g transform="translate(8,10)">
+    <rect x="8" y="16" width="40" height="22" rx="8" fill="url(#potGradient)"/>
+    <rect x="4" y="12" width="48" height="6" rx="3" fill="#ffb74d"/>
+    <circle cx="48" cy="26" r="4" fill="#ffb74d"/>
+    <path d="M16 8 C18 4, 22 4, 24 8 M24 8 C26 4, 30 4, 32 8 M32 8 C34 4, 38 4, 40 8" stroke="#f37021" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

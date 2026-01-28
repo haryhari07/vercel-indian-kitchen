@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "email": "admin@indiankitchen.com",
+      "name": "Admin User",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "createdAt": "2026-01-28T11:10:00.983Z"
+    },
+    {
+      "id": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
+      "email": "haryhari@yahoo.co.in",
+      "name": "Ravi ",
+      "passwordHash": "22bb791e282da98733b89a1b34c72762efdd6f356562a2c58cd0330eeb9e5e8f",
+      "role": "user",
+      "createdAt": "2026-01-28T11:16:30.937Z"
+    },
+    {
+      "id": "2bb56146-0fb1-4342-9880-73e649044d8a",
+      "email": "haryharri@yahoo.co.in",
+      "name": "Ravi Shankar Sidar",
+      "passwordHash": "6c0f38e1adbfa17333c27039f4044b2a3c3c632d9641c3067397f0c9aa292840",
+      "role": "user",
+      "createdAt": "2026-01-28T11:35:02.107Z"
+    },
+    {
+      "id": "9043e360-820d-4b49-9017-dce74f1367fd",
+      "email": "google-user@example.com",
+      "name": "Google User",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "user",
+      "createdAt": "2026-01-28T16:35:44.837Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "3b268f52-ab03-4adf-834a-987f704d030a",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "expiresAt": "2026-02-04T11:35:49.324Z"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "cb9ce27d-338e-49d1-8a8c-c20a2a4fff1c",
+      "userId": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
+      "recipeSlug": "makki-ki-roti",
+      "rating": 5,
+      "timestamp": "2026-01-28T11:26:12.016Z"
+    }
+  ],
+  "bookmarks": [
+    {
+      "userId": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
+      "recipeSlug": "sarson-ka-saag",
+      "timestamp": "2026-01-28T11:26:45.657Z"
+    }
+  ]
+}
