@@ -20,7 +20,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
             className="object-cover group-hover:scale-105 transition-transform duration-300" 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute top-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        <div className="absolute top-2 right-2 z-10">
           <BookmarkButton slug={recipe.slug} size="sm" />
         </div>
       </div>

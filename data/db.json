@@ -31,6 +31,14 @@
       "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
       "role": "user",
       "createdAt": "2026-01-28T16:35:44.837Z"
+    },
+    {
+      "id": "cefc5cbc-350b-4a6f-816d-8aea3d0bdabe",
+      "email": "test-bookmark-1769620494009@example.com",
+      "name": "Test User",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "user",
+      "createdAt": "2026-01-28T17:14:54.010Z"
     }
   ],
   "sessions": [
@@ -38,6 +46,11 @@
       "id": "3b268f52-ab03-4adf-834a-987f704d030a",
       "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
       "expiresAt": "2026-02-04T11:35:49.324Z"
+    },
+    {
+      "id": "993d705f-6dc8-4ae8-acb3-ae560cde7909",
+      "userId": "cefc5cbc-350b-4a6f-816d-8aea3d0bdabe",
+      "expiresAt": "2026-02-04T17:14:54.010Z"
     }
   ],
   "ratings": [
