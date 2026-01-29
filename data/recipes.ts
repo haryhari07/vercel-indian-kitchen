@@ -571,7 +571,7 @@ export const recipes: Recipe[] = [
       'Knead into a soft dough and rest for 2 hours.',
       'Roll into oval shapes and deep fry until puffy.',
     ],
-    imageUrl: '/recipes/chole-bhature.jpg',
+    imageUrl: '/recipes/chole-bhature.png',
     rating: 5,
     reviewCount: 10,
     dietary: ['Vegetarian'],
