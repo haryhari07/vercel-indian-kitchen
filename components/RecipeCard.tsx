@@ -6,9 +6,10 @@ import BookmarkButton from './BookmarkButton';
 
 interface RecipeCardProps {
   recipe: Recipe;
+  priority?: boolean;
 }
 
-export default function RecipeCard({ recipe }: RecipeCardProps) {
+export default function RecipeCard({ recipe, priority = false }: RecipeCardProps) {
   return (
     <Link href={`/recipe/${recipe.slug}`} className="card group block overflow-hidden hover:shadow-xl transition-all duration-300 relative">
       <div className="h-48 bg-gray-200 relative overflow-hidden">
@@ -17,6 +18,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
             src={recipe.imageUrl} 
             alt={recipe.title} 
             fill
+            priority={priority}
             className="object-cover group-hover:scale-105 transition-transform duration-300" 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

@@ -4,9 +4,10 @@ import { State } from '../data/types';
 
 interface StateCardProps {
   state: State;
+  priority?: boolean;
 }
 
-export default function StateCard({ state }: StateCardProps) {
+export default function StateCard({ state, priority = false }: StateCardProps) {
   return (
     <Link href={`/${state.slug}`} className="group block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow bg-white">
       <div className="h-48 bg-gray-200 relative overflow-hidden">
@@ -14,6 +15,7 @@ export default function StateCard({ state }: StateCardProps) {
           src={state.imageUrl} 
           alt={state.name} 
           fill
+          priority={priority}
           className="object-cover group-hover:scale-105 transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

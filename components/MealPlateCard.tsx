@@ -6,9 +6,10 @@ import { MealPlate } from '../data/types';
 
 interface MealPlateCardProps {
   plate: MealPlate;
+  priority?: boolean;
 }
 
-export default function MealPlateCard({ plate }: MealPlateCardProps) {
+export default function MealPlateCard({ plate, priority = false }: MealPlateCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const displayedItems = isExpanded ? plate.items : plate.items.slice(0, 3);
@@ -21,6 +22,7 @@ export default function MealPlateCard({ plate }: MealPlateCardProps) {
             src={plate.imageUrl} 
             alt={plate.title} 
             fill
+            priority={priority}
             className="object-cover group-hover:scale-105 transition-transform duration-500" 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

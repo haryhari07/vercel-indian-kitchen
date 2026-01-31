@@ -47,9 +47,10 @@ export default function Home() {
               <div className="card p-4 flex flex-col gap-3 h-full">
                 <div className="relative h-28 rounded-lg overflow-hidden">
                   <Image
-                    src="/assets/hero-dal.jpg"
+                    src="/assets/hero-dal.webp"
                     alt="Comforting Dal & Sabzis"
                     fill
+                    priority
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 25vw"
                   />
@@ -62,7 +63,7 @@ export default function Home() {
               <div className="card p-4 flex flex-col gap-3 h-full">
                 <div className="relative h-28 rounded-lg overflow-hidden">
                   <Image
-                    src="/assets/hero-sweets.jpg"
+                    src="/assets/hero-sweets.webp"
                     alt="Festive Sweets"
                     fill
                     className="object-cover"
@@ -109,8 +110,8 @@ export default function Home() {
             </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {recipes.slice(0, 4).map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+            {recipes.slice(0, 4).map((recipe, index) => (
+              <RecipeCard key={recipe.id} recipe={recipe} priority={index < 2} />
             ))}
         </div>
         <div className="mt-6 text-center md:hidden">
@@ -147,8 +148,8 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {states.map((state) => (
-            <StateCard key={state.slug} state={state} />
+          {states.map((state, index) => (
+            <StateCard key={state.slug} state={state} priority={index < 3} />
           ))}
         </div>
       </section>

@@ -34,8 +34,8 @@ export default async function StatePage({ params }: PageProps) {
         <h2 className="text-2xl font-bold font-serif text-gray-800 mb-6 border-b pb-2">Recipes from {state.name}</h2>
         {stateRecipes.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {stateRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+            {stateRecipes.map((recipe, index) => (
+              <RecipeCard key={recipe.id} recipe={recipe} priority={index < 3} />
             ))}
           </div>
         ) : (
