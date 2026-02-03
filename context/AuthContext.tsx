@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { signOut } from 'next-auth/react';
 
 interface User {
   id: string;
@@ -14,6 +15,7 @@ interface AuthContextType {
   login: (email: string, password: string) => Promise<void>;
   signup: (email: string, password: string, name: string) => Promise<void>;
   logout: () => Promise<void>;
+  refreshUser: () => Promise<void>;
   isAuthenticated: boolean;
   isLoading: boolean;
 }
@@ -78,12 +80,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const logout = async () => {
+    await signOut({ redirect: false });
     await fetch('/api/auth/logout', { method: 'POST' });
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated: !!user, isLoading }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, refreshUser: checkAuth, isAuthenticated: !!user, isLoading }}>
       {children}
     </AuthContext.Provider>
   );

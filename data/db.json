@@ -9,36 +9,22 @@
       "createdAt": "2026-01-28T11:10:00.983Z"
     },
     {
-      "id": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
-      "email": "haryhari@yahoo.co.in",
-      "name": "Ravi ",
-      "passwordHash": "22bb791e282da98733b89a1b34c72762efdd6f356562a2c58cd0330eeb9e5e8f",
+      "id": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "email": "haryhari07@gmail.com",
+      "name": "ravi shankar",
+      "passwordHash": "865a81c430d224aa4c1ab12c67da18c270212013a643d2742465aa18efe578ba",
       "role": "user",
-      "createdAt": "2026-01-28T11:16:30.937Z"
+      "status": "active",
+      "createdAt": "2026-02-03T18:07:44.158Z"
     },
     {
-      "id": "2bb56146-0fb1-4342-9880-73e649044d8a",
-      "email": "haryharri@yahoo.co.in",
-      "name": "Ravi Shankar Sidar",
-      "passwordHash": "6c0f38e1adbfa17333c27039f4044b2a3c3c632d9641c3067397f0c9aa292840",
-      "role": "user",
-      "createdAt": "2026-01-28T11:35:02.107Z"
-    },
-    {
-      "id": "9043e360-820d-4b49-9017-dce74f1367fd",
-      "email": "google-user@example.com",
-      "name": "Google User",
+      "id": "5d855169-1225-472b-a109-c284b013fc02",
+      "email": "divyanshsidar07@gmail.com",
+      "name": "Gita Sidar",
       "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
-      "role": "user",
-      "createdAt": "2026-01-28T16:35:44.837Z"
-    },
-    {
-      "id": "cefc5cbc-350b-4a6f-816d-8aea3d0bdabe",
-      "email": "test-bookmark-1769620494009@example.com",
-      "name": "Test User",
-      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
-      "role": "user",
-      "createdAt": "2026-01-28T17:14:54.010Z"
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-02-04T12:00:00.000Z"
     }
   ],
   "sessions": [
@@ -48,25 +34,2504 @@
       "expiresAt": "2026-02-04T11:35:49.324Z"
     },
     {
-      "id": "993d705f-6dc8-4ae8-acb3-ae560cde7909",
-      "userId": "cefc5cbc-350b-4a6f-816d-8aea3d0bdabe",
-      "expiresAt": "2026-02-04T17:14:54.010Z"
+      "id": "ca0988b9-a05a-4835-ae79-a7fbf86a318d",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "expiresAt": "2026-02-07T07:25:20.760Z"
+    },
+    {
+      "id": "418e55a0-a6d5-4975-bb8a-d7884c72a90a",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "expiresAt": "2026-02-07T09:20:43.117Z"
+    },
+    {
+      "id": "f845d892-2dd4-445a-92b5-e3fcef063f7f",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "expiresAt": "2026-02-10T18:33:05.527Z"
     }
   ],
   "ratings": [
     {
-      "id": "cb9ce27d-338e-49d1-8a8c-c20a2a4fff1c",
-      "userId": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
+      "id": "503829a0-d8e4-456e-9ff1-bfb56d31ee62",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
       "recipeSlug": "makki-ki-roti",
       "rating": 5,
-      "timestamp": "2026-01-28T11:26:12.016Z"
+      "timestamp": "2026-01-31T06:04:03.969Z"
     }
   ],
-  "bookmarks": [
+  "bookmarks": [],
+  "activities": [
     {
-      "userId": "fc4cb839-98c1-46bc-be23-6b14a77314ee",
-      "recipeSlug": "sarson-ka-saag",
-      "timestamp": "2026-01-28T11:26:45.657Z"
+      "id": "1b2ddeaa-7a3b-47c5-8caa-86cae71bce92",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T05:54:29.012Z"
+    },
+    {
+      "id": "9e39db98-ddf3-4567-aea7-b9ad104ef72e",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "rating",
+      "targetSlug": "makki-ki-roti",
+      "details": "Rated recipe makki-ki-roti with 4 stars",
+      "timestamp": "2026-01-31T06:04:02.954Z"
+    },
+    {
+      "id": "b95a574d-4517-48de-b26e-b0907941fc37",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "rating",
+      "targetSlug": "makki-ki-roti",
+      "details": "Rated recipe makki-ki-roti with 5 stars",
+      "timestamp": "2026-01-31T06:04:03.970Z"
+    },
+    {
+      "id": "c90447dd-cc71-4326-a3d3-7ee39e75d653",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-01-31T06:43:07.033Z"
+    },
+    {
+      "id": "dd415e22-fba6-44e6-b7ac-dd126930df23",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T07:25:20.760Z"
+    },
+    {
+      "id": "9513d084-0539-43ef-a340-94bc9115c919",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T08:23:37.291Z"
+    },
+    {
+      "id": "45fab67a-eef5-4d19-a661-71728976b800",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-01-31T08:25:56.828Z"
+    },
+    {
+      "id": "20a6ac6b-e3fa-4c06-aafa-42b0678e75fc",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T08:26:20.145Z"
+    },
+    {
+      "id": "ba53a44c-1463-48ce-9b5f-35e02afe2fd4",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-01-31T08:28:08.495Z"
+    },
+    {
+      "id": "37d74bde-1208-4008-b2d6-2e292c80fabc",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T08:28:16.573Z"
+    },
+    {
+      "id": "6713b52a-4da2-4f6f-8b03-b21665329bc3",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-01-31T08:30:06.456Z"
+    },
+    {
+      "id": "c6b93b1a-ca9a-4e1d-a8b3-cfdf5e4e9286",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-01-31T09:20:43.117Z"
+    },
+    {
+      "id": "8b945472-cd76-4584-8154-6c4edd931531",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T16:46:05.326Z"
+    },
+    {
+      "id": "e8501686-4139-4c8e-bf1e-37281862feb1",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T18:07:17.575Z"
+    },
+    {
+      "id": "c034a5ca-4a63-418a-8153-a3eb153239ae",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "signup",
+      "details": "User registered",
+      "timestamp": "2026-02-03T18:07:44.158Z"
+    },
+    {
+      "id": "320f8897-86a7-486a-a1ec-9887826b8266",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T18:07:44.160Z"
+    },
+    {
+      "id": "a8694d68-5ff4-46d3-a398-784fd1ab7247",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T18:07:51.114Z"
+    },
+    {
+      "id": "63f530cc-6373-4cf1-bc38-5f4dcda7a0e1",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T18:08:02.142Z"
+    },
+    {
+      "id": "4871f59e-eb87-4090-8363-5b12c4cf9336",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T18:08:50.451Z"
+    },
+    {
+      "id": "d945ae5c-d3fe-4174-9b24-4ca608091bdd",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T18:33:05.527Z"
+    }
+  ],
+  "comments": [],
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Sarson Ka Saag",
+      "slug": "sarson-ka-saag",
+      "state": "Punjab",
+      "region": "North India",
+      "prepTime": "20 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "A traditional Punjabi dish made from mustard greens and spices.",
+      "ingredients": [
+        {
+          "item": "Mustard Greens (Sarson)",
+          "quantity": "500g"
+        },
+        {
+          "item": "Spinach (Palak)",
+          "quantity": "250g"
+        },
+        {
+          "item": "Maize Flour",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "3 tbsp"
+        },
+        {
+          "item": "Ginger & Garlic",
+          "quantity": "2 tbsp minced"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2-3"
+        }
+      ],
+      "instructions": [
+        "Clean and chop the mustard greens and spinach thoroughly.",
+        "Boil the greens with chopped ginger, garlic, and green chilies until soft (approx. 20-25 mins).",
+        "Mash the cooked greens into a coarse paste using a blender or traditional masher.",
+        "Dissolve maize flour in a little water and stir it into the greens to thicken.",
+        "Simmer on low heat for 20 minutes.",
+        "Prepare a tempering: Heat ghee, fry onions and dried red chilies until golden.",
+        "Pour the tempering over the saag and serve hot."
+      ],
+      "imageUrl": "/recipes/sarson-ka-saag.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Makki Ki Roti",
+      "slug": "makki-ki-roti",
+      "state": "Punjab",
+      "region": "North India",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "description": "A rustic unleavened flatbread made from maize flour.",
+      "ingredients": [
+        {
+          "item": "Maize Flour (Makki Atta)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Warm Water",
+          "quantity": "as needed"
+        },
+        {
+          "item": "Salt",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "for frying"
+        }
+      ],
+      "instructions": [
+        "Mix maize flour and salt in a bowl.",
+        "Gradually add warm water and knead into a firm, pliable dough.",
+        "Divide dough into medium-sized balls.",
+        "Flatten a ball between wet palms or plastic sheets to form a thick disc.",
+        "Heat a griddle (tawa) and cook the roti on medium heat.",
+        "Flip and apply ghee, cooking until golden brown spots appear on both sides."
+      ],
+      "imageUrl": "/recipes/makki-ki-roti.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Butter Chicken",
+      "slug": "butter-chicken",
+      "state": "Punjab",
+      "region": "North India",
+      "prepTime": "30 mins",
+      "cookTime": "40 mins",
+      "servings": 4,
+      "description": "World-famous chicken curry in a creamy tomato sauce.",
+      "ingredients": [
+        {
+          "item": "Chicken",
+          "quantity": "500g boneless"
+        },
+        {
+          "item": "Butter",
+          "quantity": "50g"
+        },
+        {
+          "item": "Tomato Puree",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Fresh Cream",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Ginger Garlic Paste",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Kasoori Methi",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Kashmiri Chili Powder",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Marinate chicken with yogurt, ginger-garlic paste, chili powder, and salt for 1 hour.",
+        "Grill or pan-fry the chicken until cooked and slightly charred.",
+        "Heat butter in a pan, add tomato puree, and cook until oil separates.",
+        "Add cashew paste (optional), cream, sugar, and crushed kasoori methi.",
+        "Toss in the cooked chicken and simmer for 5-7 minutes.",
+        "Serve hot with Naan or Jeera Rice."
+      ],
+      "imageUrl": "/recipes/butter-chicken.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "jk1",
+      "title": "Rogan Josh",
+      "slug": "rogan-josh",
+      "state": "Jammu and Kashmir",
+      "region": "North India",
+      "prepTime": "30 mins",
+      "cookTime": "1 hour",
+      "servings": 4,
+      "description": "Aromatic lamb curry with Kashmiri spices.",
+      "ingredients": [
+        {
+          "item": "Lamb/Mutton",
+          "quantity": "500g (shoulder cut)"
+        },
+        {
+          "item": "Yogurt",
+          "quantity": "1 cup whisked"
+        },
+        {
+          "item": "Kashmiri Chili Powder",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Fennel Powder (Saunf)",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Dry Ginger Powder (Sonth)",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Mustard Oil",
+          "quantity": "4 tbsp"
+        },
+        {
+          "item": "Whole Spices",
+          "quantity": "Cloves, Cardamom, Cinnamon"
+        },
+        {
+          "item": "Hing (Asafoetida)",
+          "quantity": "1 pinch"
+        }
+      ],
+      "instructions": [
+        "Heat mustard oil until smoking point, then cool slightly.",
+        "Add whole spices and hing. Fry the meat pieces until browned and seared.",
+        "Add a little water and Kashmiri chili powder (dissolved in water) for vibrant red color.",
+        "Whisk yogurt and add it slowly while stirring continuously to prevent splitting.",
+        "Add fennel powder, ginger powder, and salt. Cover and cook on low heat.",
+        "Simmer for 45-60 minutes until the meat is tender and falls off the bone.",
+        "Serve with steamed rice or Naan."
+      ],
+      "imageUrl": "/recipes/rogan-josh.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "hp1",
+      "title": "Dham",
+      "slug": "dham",
+      "state": "Himachal Pradesh",
+      "region": "North India",
+      "prepTime": "4 hours",
+      "cookTime": "2 hours",
+      "servings": 6,
+      "description": "A traditional festive meal featuring red kidney beans, rice, and curd.",
+      "ingredients": [
+        {
+          "item": "Rajma (Red Kidney Beans)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Rice",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Yogurt",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Mustard Oil",
+          "quantity": "4 tbsp"
+        },
+        {
+          "item": "Whole Spices",
+          "quantity": "Bay leaf, Cinnamon, Cloves"
+        }
+      ],
+      "instructions": [
+        "Soak Rajma overnight and boil until soft.",
+        "Heat mustard oil in a heavy pot and fry whole spices.",
+        "Add yogurt (whisked) slowly while stirring continuously to prevent curdling.",
+        "Add the boiled Rajma and spices like turmeric and coriander powder.",
+        "Simmer on low heat for 45 minutes until the gravy thickens.",
+        "Serve hot with plain steamed rice."
+      ],
+      "imageUrl": "/recipes/dham.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "uk1",
+      "title": "Kafuli",
+      "slug": "kafuli",
+      "state": "Uttarakhand",
+      "region": "North India",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Nutritious spinach and fenugreek curry.",
+      "ingredients": [
+        {
+          "item": "Spinach (Palak)",
+          "quantity": "1 bunch"
+        },
+        {
+          "item": "Fenugreek Leaves (Methi)",
+          "quantity": "1/2 bunch"
+        },
+        {
+          "item": "Rice Flour",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2-3"
+        },
+        {
+          "item": "Curd",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Mustard Oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Jakhiya (Wild Mustard)",
+          "quantity": "1 tsp (optional)"
+        }
+      ],
+      "instructions": [
+        "Wash and boil spinach and fenugreek leaves with a little water until soft.",
+        "Blend the boiled greens into a smooth paste along with green chilies.",
+        "Mix rice flour with water to make a thin paste (Aalan).",
+        "Heat oil in a kadai (iron wok preferred) and splutter jakhiya or cumin seeds.",
+        "Add the green paste and cook for 5 minutes.",
+        "Stir in the rice flour paste and curd. Simmer for 15-20 minutes until thickened."
+      ],
+      "imageUrl": "/recipes/kafuli.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "hr1",
+      "title": "Bajra Khichdi",
+      "slug": "bajra-khichdi",
+      "state": "Haryana",
+      "region": "North India",
+      "prepTime": "8 hours",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Hearty pearl millet porridge perfect for winters.",
+      "ingredients": [
+        {
+          "item": "Bajra (Pearl Millet)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Moong Dal (Yellow)",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "3 tbsp"
+        },
+        {
+          "item": "Cumin Seeds (Jeera)",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Hing (Asafoetida)",
+          "quantity": "1 pinch"
+        },
+        {
+          "item": "Water",
+          "quantity": "4-5 cups"
+        },
+        {
+          "item": "Salt",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "Wash bajra and moong dal thoroughly. Soak bajra for 4-5 hours (optional but recommended).",
+        "Crush the bajra slightly in a mortar or blender (just to break the grain).",
+        "In a pressure cooker, add bajra, dal, salt, and water.",
+        "Pressure cook for 4-5 whistles on medium heat until mushy.",
+        "Allow steam to release naturally. Open and mash slightly with a ladle.",
+        "Tempering: Heat ghee, splutter cumin seeds and hing. Pour over the khichdi.",
+        "Serve hot with a dollop of ghee, curd, or pickle."
+      ],
+      "imageUrl": "/recipes/bajra-khichdi.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "dl1",
+      "title": "Chole Bhature",
+      "slug": "chole-bhature",
+      "state": "Delhi",
+      "region": "North India",
+      "prepTime": "8 hours",
+      "cookTime": "45 mins",
+      "servings": 2,
+      "description": "Spicy chickpea curry served with fluffy fried bread.",
+      "ingredients": [
+        {
+          "item": "Chickpeas (Kabuli Chana)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Maida (All Purpose Flour)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Tea bag",
+          "quantity": "1 (for color)"
+        },
+        {
+          "item": "Chole Masala",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Yogurt",
+          "quantity": "1/2 cup"
+        }
+      ],
+      "instructions": [
+        "Soak chickpeas overnight. Boil with salt and a tea bag for dark color.",
+        "Sauté onions, ginger-garlic paste, and tomatoes. Add chole masala.",
+        "Mix the boiled chickpeas into the masala and simmer.",
+        "For Bhature: Mix maida, yogurt, salt, and a pinch of baking soda.",
+        "Knead into a soft dough and rest for 2 hours.",
+        "Roll into oval shapes and deep fry until puffy."
+      ],
+      "imageUrl": "/recipes/chole-bhature.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "up1",
+      "title": "Galouti Kebab",
+      "slug": "galouti-kebab",
+      "state": "Uttar Pradesh",
+      "region": "North India",
+      "prepTime": "1 hour",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Melt-in-mouth minced meat kebabs from Lucknow.",
+      "ingredients": [
+        {
+          "item": "Minced Mutton (Keema)",
+          "quantity": "500g"
+        },
+        {
+          "item": "Raw Papaya Paste",
+          "quantity": "2 tbsp (tenderizer)"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "4 tbsp"
+        },
+        {
+          "item": "Roasted Gram Flour",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Potli Masala",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Rose Water",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Marinate minced mutton with papaya paste and salt for 4 hours.",
+        "Mix in roasted gram flour and the special spice blend (Potli Masala).",
+        "Add rose water and knead well to a smooth, sticky texture.",
+        "Smoke the mixture using a live charcoal and ghee (Dhungar method).",
+        "Shape into flat round patties.",
+        "Pan fry on low heat in ghee until browned and meltingly soft."
+      ],
+      "imageUrl": "/recipes/galouti-kebab.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "rj1",
+      "title": "Dal Baati Churma",
+      "slug": "dal-baati-churma",
+      "state": "Rajasthan",
+      "region": "North India",
+      "prepTime": "45 mins",
+      "cookTime": "1 hour",
+      "servings": 4,
+      "description": "Hard wheat rolls served with lentils and sweetened crumbled wheat.",
+      "ingredients": [
+        {
+          "item": "Wheat Flour (Atta)",
+          "quantity": "2 cups (coarse)"
+        },
+        {
+          "item": "Semolina (Sooji)",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Mixed Lentils (Panchmel Dal)",
+          "quantity": "1 cup (Toor, Moong, Chana, Urad, Masoor)"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "1 cup melted"
+        },
+        {
+          "item": "Spices",
+          "quantity": "Red Chili, Turmeric, Coriander, Cumin"
+        },
+        {
+          "item": "Powdered Sugar",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Cardamom Powder",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Baati: Mix flour, sooji, ghee, and salt. Knead stiff dough with warm water.",
+        "Shape into round balls. Bake in a preheated oven/tandoor at 180°C for 30-40 mins until golden and cracked.",
+        "Dip hot baatis in melted ghee.",
+        "Dal: Pressure cook mixed lentils with salt and turmeric.",
+        "Temper with ghee, cumin, cloves, red chilies, and spices. Simmer for 10 mins.",
+        "Churma: Crush 2-3 baked baatis into fine crumbs.",
+        "Mix with powdered sugar, cardamom, and plenty of ghee.",
+        "Serve the trio together."
+      ],
+      "imageUrl": "/recipes/dal-baati-churma.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "tn1",
+      "title": "Traditional Idli",
+      "slug": "traditional-idli",
+      "state": "Tamil Nadu",
+      "region": "South India",
+      "prepTime": "12 hours",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "description": "Soft steamed rice cakes.",
+      "ingredients": [
+        {
+          "item": "Idli Rice (Parboiled)",
+          "quantity": "4 cups"
+        },
+        {
+          "item": "Urad Dal (Whole White)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Fenugreek Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Salt",
+          "quantity": "2 tsp"
+        },
+        {
+          "item": "Water",
+          "quantity": "for grinding"
+        }
+      ],
+      "instructions": [
+        "Soak rice and dal separately (add fenugreek to dal) for 4-6 hours.",
+        "Grind dal into a fluffy, smooth batter using ice-cold water.",
+        "Grind rice to a slightly coarse texture.",
+        "Mix both batters with hand to aerate, add salt, and ferment overnight (8-10 hours).",
+        "Pour batter into greased idli molds.",
+        "Steam for 10-12 minutes until soft and fluffy."
+      ],
+      "imageUrl": "/recipes/traditional-idli.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "tn2",
+      "title": "Chicken Chettinad",
+      "slug": "chicken-chettinad",
+      "state": "Tamil Nadu",
+      "region": "South India",
+      "prepTime": "30 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Fiery chicken curry made with fresh ground spices.",
+      "ingredients": [
+        {
+          "item": "Chicken",
+          "quantity": "500g"
+        },
+        {
+          "item": "Fresh Coconut",
+          "quantity": "1/2 cup grated"
+        },
+        {
+          "item": "Black Peppercorns",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Dried Red Chilies",
+          "quantity": "5-6"
+        },
+        {
+          "item": "Curry Leaves",
+          "quantity": "2 sprigs"
+        },
+        {
+          "item": "Small Onions (Shallots)",
+          "quantity": "1 cup"
+        }
+      ],
+      "instructions": [
+        "Dry roast spices (pepper, cumin, fennel, red chilies) and coconut until golden.",
+        "Grind the roasted mixture into a fine paste.",
+        "Heat oil (gingelly/sesame oil preferred) and sauté shallots and curry leaves.",
+        "Add chicken and sear until white.",
+        "Add the ground masala paste and water.",
+        "Cover and cook until chicken is tender and oil floats on top."
+      ],
+      "imageUrl": "/recipes/chicken-chettinad.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "kl1",
+      "title": "Appam with Stew",
+      "slug": "appam-stew",
+      "state": "Kerala",
+      "region": "South India",
+      "prepTime": "8 hours",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Lacy rice pancakes served with mild coconut vegetable stew.",
+      "ingredients": [
+        {
+          "item": "Raw Rice",
+          "quantity": "2 cups soaked"
+        },
+        {
+          "item": "Coconut",
+          "quantity": "1/2 cup grated"
+        },
+        {
+          "item": "Cooked Rice",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Yeast",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Sugar",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Vegetables",
+          "quantity": "Carrot, Peas, Potato"
+        },
+        {
+          "item": "Coconut Milk",
+          "quantity": "2 cups (Thick & Thin)"
+        }
+      ],
+      "instructions": [
+        "Appam: Grind soaked rice, coconut, and cooked rice to a smooth batter.",
+        "Add yeast and sugar. Ferment for 8 hours until frothy.",
+        "Pour a ladle of batter into an Appam Chatti (pan), swirl to coat sides.",
+        "Cover and cook until edges are crisp and center is soft.",
+        "Stew: Boil vegetables with thin coconut milk, ginger, chilies, and whole spices.",
+        "Add thick coconut milk, simmer for 2 mins (don't boil), and temper with curry leaves."
+      ],
+      "imageUrl": "/recipes/appam-stew.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Vegan",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "ka1",
+      "title": "Bisi Bele Bath",
+      "slug": "bisi-bele-bath",
+      "state": "Karnataka",
+      "region": "South India",
+      "prepTime": "30 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Spicy rice and lentil mash with vegetables.",
+      "ingredients": [
+        {
+          "item": "Rice (Sona Masoori)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Toor Dal",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "1 cup (Carrot, Beans, Peas, Potato)"
+        },
+        {
+          "item": "Tamarind Extract",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Bisi Bele Bath Masala",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Cashews",
+          "quantity": "10-12"
+        },
+        {
+          "item": "Jaggery",
+          "quantity": "1 small piece"
+        }
+      ],
+      "instructions": [
+        "Wash rice and dal. Pressure cook with turmeric and water until very soft.",
+        "Boil the mixed vegetables separately until tender but firm.",
+        "In a large pot, mix the cooked rice-dal mash and boiled vegetables.",
+        "Add tamarind extract, jaggery, salt, and bisi bele bath masala (mixed in little water).",
+        "Adjust consistency with hot water and simmer for 10 minutes.",
+        "Tempering: Heat ghee, roast cashews, mustard seeds, curry leaves, and dried red chilies.",
+        "Pour tempering over the hot rice. Serve with boondi or chips."
+      ],
+      "imageUrl": "/recipes/bisi-bele-bath.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "ap1",
+      "title": "Hyderabadi Biryani",
+      "slug": "hyderabadi-biryani",
+      "state": "Andhra Pradesh",
+      "region": "South India",
+      "prepTime": "1 hour",
+      "cookTime": "1 hour",
+      "servings": 6,
+      "description": "World-famous aromatic rice and meat dish cooked on dum.",
+      "ingredients": [
+        {
+          "item": "Basmati Rice",
+          "quantity": "1 kg aged"
+        },
+        {
+          "item": "Chicken/Mutton",
+          "quantity": "1 kg"
+        },
+        {
+          "item": "Fried Onions (Birista)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Yogurt",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Saffron Milk",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Mint & Coriander",
+          "quantity": "1 bunch each"
+        }
+      ],
+      "instructions": [
+        "Marinate meat with yogurt, ginger-garlic, raw papaya (if mutton), spices, and fried onions for 4+ hours.",
+        "Boil water with whole spices and salt (like sea water).",
+        "Add soaked rice and cook until 70% done.",
+        "Layer the semi-cooked rice over the raw marinated meat in a heavy pot (Kacchi Yakhni style).",
+        "Top with saffron milk, ghee, and herbs. Seal with dough.",
+        "Cook on high for 10 mins, then low (dum) for 40 mins."
+      ],
+      "imageUrl": "/recipes/hyderabadi-biryani.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "tg1",
+      "title": "Sarva Pindi",
+      "slug": "sarva-pindi",
+      "state": "Telangana",
+      "region": "South India",
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Savory pancake made of rice flour and peanuts.",
+      "ingredients": [
+        {
+          "item": "Rice Flour",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Peanuts",
+          "quantity": "1/4 cup roasted"
+        },
+        {
+          "item": "Chana Dal",
+          "quantity": "2 tbsp soaked"
+        },
+        {
+          "item": "Sesame Seeds",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2 minced"
+        },
+        {
+          "item": "Spring Onions",
+          "quantity": "1/4 cup"
+        }
+      ],
+      "instructions": [
+        "Mix rice flour with peanuts, soaked chana dal, sesame seeds, chilies, onions, and salt.",
+        "Add warm water gradually to make a soft dough (not sticky).",
+        "Take a portion and press it flat directly into a greased heavy-bottomed pan (kadai).",
+        "Make holes in the flattened dough with your finger and drizzle oil in them.",
+        "Cover and cook on medium flame until the bottom is crisp and golden.",
+        "Serve hot with pickle or butter."
+      ],
+      "imageUrl": "/recipes/sarva-pindi.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "mh1",
+      "title": "Vada Pav",
+      "slug": "vada-pav",
+      "state": "Maharashtra",
+      "region": "West India",
+      "prepTime": "30 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Indian burger - spiced potato fritter in a bun.",
+      "ingredients": [
+        {
+          "item": "Potatoes",
+          "quantity": "4 boiled & mashed"
+        },
+        {
+          "item": "Pav Buns",
+          "quantity": "4"
+        },
+        {
+          "item": "Besan (Gram Flour)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Garlic Chutney",
+          "quantity": "4 tbsp"
+        },
+        {
+          "item": "Mustard Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Curry Leaves",
+          "quantity": "1 sprig"
+        }
+      ],
+      "instructions": [
+        "Heat oil, splutter mustard seeds, curry leaves, and green chilies.",
+        "Mix this tempering into mashed potatoes with turmeric and salt.",
+        "Shape potato mix into balls.",
+        "Make a thick batter with besan, salt, turmeric, and soda.",
+        "Dip potato balls in batter and deep fry until golden.",
+        "Slit pav buns, spread garlic chutney, place the vada, and serve."
+      ],
+      "imageUrl": "/recipes/vada-pav.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "gj1",
+      "title": "Dhokla",
+      "slug": "dhokla",
+      "state": "Gujarat",
+      "region": "West India",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Steamed savory cake made from gram flour.",
+      "ingredients": [
+        {
+          "item": "Besan (Gram Flour)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Semolina (Sooji)",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Curd",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Lemon Juice",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Eno Fruit Salt",
+          "quantity": "1 sachet (1 tsp)"
+        },
+        {
+          "item": "Mustard Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2-3 slit"
+        }
+      ],
+      "instructions": [
+        "Mix besan, sooji, curd, lemon juice, sugar, and salt with water to make a smooth batter.",
+        "Let the batter rest for 15 minutes.",
+        "Grease a steaming tin. Add Eno to the batter and whisk briskly (it will froth).",
+        "Immediately pour into the tin and steam for 15-20 minutes.",
+        "Check with a toothpick (should come out clean). Cool slightly and cut into squares.",
+        "Tempering: Heat oil, crackle mustard seeds, sesame seeds, curry leaves, and green chilies. Pour over Dhokla."
+      ],
+      "imageUrl": "/recipes/dhokla.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "ga1",
+      "title": "Goan Fish Curry",
+      "slug": "goan-fish-curry",
+      "state": "Goa",
+      "region": "West India",
+      "prepTime": "20 mins",
+      "cookTime": "20 mins",
+      "servings": 2,
+      "description": "Tangy and spicy coconut-based fish curry.",
+      "ingredients": [
+        {
+          "item": "Kingfish/Pomfret",
+          "quantity": "4 slices"
+        },
+        {
+          "item": "Fresh Coconut",
+          "quantity": "1 cup grated"
+        },
+        {
+          "item": "Kashmiri Red Chilies",
+          "quantity": "5-6 dried"
+        },
+        {
+          "item": "Coriander Seeds",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Tamarind",
+          "quantity": "1 small ball"
+        },
+        {
+          "item": "Kokum",
+          "quantity": "3-4 petals"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2 slit"
+        }
+      ],
+      "instructions": [
+        "Grind coconut, dried chilies, coriander seeds, turmeric, and tamarind into a fine paste.",
+        "Heat a little oil in a pot, add the ground masala paste and sauté for 2 mins.",
+        "Add water to adjust consistency and bring to a boil.",
+        "Add the fish slices, slit green chilies, and kokum petals.",
+        "Simmer gently for 5-7 minutes until fish is cooked. Do not stir vigorously.",
+        "Serve hot with steamed rice."
+      ],
+      "imageUrl": "/recipes/goan-fish-curry.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "wb1",
+      "title": "Rosogolla",
+      "slug": "rosogolla",
+      "state": "West Bengal",
+      "region": "East India",
+      "prepTime": "30 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Spongy cheese balls in syrup.",
+      "ingredients": [
+        {
+          "item": "Full Cream Milk",
+          "quantity": "1 liter"
+        },
+        {
+          "item": "Lemon Juice/Vinegar",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Sugar",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Water",
+          "quantity": "4 cups"
+        },
+        {
+          "item": "Cardamom",
+          "quantity": "3-4 pods"
+        }
+      ],
+      "instructions": [
+        "Boil milk and curdle it with lemon juice to make Chenna (soft cottage cheese).",
+        "Drain and rinse the chenna under cold water. Hang for 30 mins to drain whey.",
+        "Knead the chenna with your palm for 10-15 mins until smooth and oily.",
+        "Divide into small balls without any cracks.",
+        "Make a thin syrup by boiling sugar and water with cardamom.",
+        "Gently drop the balls into boiling syrup and cook covered for 15-20 mins."
+      ],
+      "imageUrl": "/recipes/rosogolla.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "od1",
+      "title": "Dalma",
+      "slug": "dalma",
+      "state": "Odisha",
+      "region": "East India",
+      "prepTime": "20 mins",
+      "cookTime": "40 mins",
+      "servings": 4,
+      "description": "Nutritious lentil dish with mixed vegetables.",
+      "ingredients": [
+        {
+          "item": "Toor Dal",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Chana Dal",
+          "quantity": "1/4 cup (optional)"
+        },
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "2 cups (Pumpkin, Raw Banana, Brinjal, Potato, Arbi)"
+        },
+        {
+          "item": "Ginger",
+          "quantity": "1 inch crushed"
+        },
+        {
+          "item": "Panch Phoron",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Dry Red Chilies",
+          "quantity": "2"
+        },
+        {
+          "item": "Ghee",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Roasted Cumin-Chili Powder",
+          "quantity": "1 tsp (Bhaja Masala)"
+        },
+        {
+          "item": "Grated Coconut",
+          "quantity": "2 tbsp"
+        }
+      ],
+      "instructions": [
+        "Wash dal and soak for 30 mins. Chop vegetables into large chunks.",
+        "Pressure cook dal, vegetables, salt, turmeric, and water for 2 whistles.",
+        "The dal should be cooked but vegetables should hold shape.",
+        "Tempering: Heat ghee, splutter panch phoron and dry red chilies.",
+        "Add crushed ginger and fry for a minute. Pour this tempering over the dal.",
+        "Simmer for 2-3 minutes. Sprinkle bhaja masala and grated coconut.",
+        "Serve hot with steamed rice."
+      ],
+      "imageUrl": "/recipes/dalma.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "br1",
+      "title": "Litti Chokha",
+      "slug": "litti-chokha",
+      "state": "Bihar",
+      "region": "East India",
+      "prepTime": "1 hour",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Wheat balls stuffed with sattu served with roasted eggplant mash.",
+      "ingredients": [
+        {
+          "item": "Wheat Flour (Atta)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Sattu (Roasted Gram Flour)",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Eggplant (Bharta Baingan)",
+          "quantity": "1 large"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": "2"
+        },
+        {
+          "item": "Mustard Oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Pickle Masala",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Garlic & Ginger",
+          "quantity": "1 tbsp minced"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2-3 chopped"
+        },
+        {
+          "item": "Carom Seeds (Ajwain)",
+          "quantity": "1/2 tsp"
+        }
+      ],
+      "instructions": [
+        "Dough: Knead wheat flour with water, salt, and ghee into a semi-stiff dough.",
+        "Filling: Mix sattu with chopped garlic, ginger, chilies, ajwain, pickle masala, mustard oil, lemon juice, and salt.",
+        "Add a few drops of water to the filling to make it moist (crumbly texture).",
+        "Make small balls of dough, cup them, stuff with sattu mix, and seal tight.",
+        "Roast Litti on coal, cow dung cakes, or in an oven (200°C) until brown and crusty. Dip in ghee.",
+        "Chokha: Roast eggplant and tomatoes on direct flame until charred.",
+        "Peel and mash them. Mix with raw mustard oil, chopped onions, chilies, coriander, and salt.",
+        "Serve hot Litti broken into the Chokha."
+      ],
+      "imageUrl": "/recipes/litti-chokha.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "jh1",
+      "title": "Dhuska",
+      "slug": "dhuska",
+      "state": "Jharkhand",
+      "region": "East India",
+      "prepTime": "4 hours",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Deep-fried savory pancake made of rice and lentils.",
+      "ingredients": [
+        {
+          "item": "Rice",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Chana Dal",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Urad Dal",
+          "quantity": "1/4 cup"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2"
+        },
+        {
+          "item": "Cumin Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Oil",
+          "quantity": "for deep frying"
+        }
+      ],
+      "instructions": [
+        "Soak rice and both dals together for 4-5 hours.",
+        "Drain and grind into a slightly coarse batter with chilies and ginger.",
+        "Add salt, turmeric, and cumin seeds to the batter. Whisk well.",
+        "Heat oil in a deep kadai.",
+        "Pour a ladleful of batter into hot oil (like a pancake) and deep fry.",
+        "Serve with potato curry or ghugni."
+      ],
+      "imageUrl": "/recipes/dhuska.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "mp1",
+      "title": "Poha Jalebi",
+      "slug": "poha-jalebi",
+      "state": "Madhya Pradesh",
+      "region": "Central India",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "description": "Famous breakfast combo of flattened rice and sweet swirls.",
+      "ingredients": [
+        {
+          "item": "Thick Poha (Flattened Rice)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 finely chopped"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2-3"
+        },
+        {
+          "item": "Mustard Seeds & Fennel",
+          "quantity": "1 tsp each"
+        },
+        {
+          "item": "Turmeric",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Jalebi",
+          "quantity": "store bought/homemade"
+        }
+      ],
+      "instructions": [
+        "Rinse poha gently in a colander and let it sit (do not soak).",
+        "Heat oil, crackle mustard and fennel seeds.",
+        "Sauté onions and chilies until translucent. Add turmeric and salt.",
+        "Add the moist poha and toss gently to mix. Steam covered for 2 mins.",
+        "Garnish with coriander, sev, and a squeeze of lemon.",
+        "Serve hot with crispy sweet Jalebis."
+      ],
+      "imageUrl": "/recipes/poha-jalebi.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "ch1",
+      "title": "Fara",
+      "slug": "fara",
+      "state": "Chhattisgarh",
+      "region": "Central India",
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Steamed rice dumplings.",
+      "ingredients": [
+        {
+          "item": "Rice Flour",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Leftover Rice",
+          "quantity": "1/2 cup (optional)"
+        },
+        {
+          "item": "Water",
+          "quantity": "1.5 cups"
+        },
+        {
+          "item": "Sesame Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Green Chilies & Coriander",
+          "quantity": "chopped"
+        },
+        {
+          "item": "Oil",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        "Boil water with salt and a teaspoon of oil. Add rice flour and mix quickly.",
+        "Turn off heat, cover, and let it rest for 5 mins. Knead into a smooth dough while warm.",
+        "Mix in leftover rice (mashed), sesame seeds, chilies, and coriander.",
+        "Shape into small cylindrical rolls or fingers.",
+        "Steam in a steamer or idli cooker for 10-15 minutes.",
+        "Temper: Heat oil, splutter mustard seeds, sesame seeds, and curry leaves. Toss the steamed Fara in it."
+      ],
+      "imageUrl": "/recipes/fara.jpg",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "as1",
+      "title": "Masor Tenga",
+      "slug": "masor-tenga",
+      "state": "Assam",
+      "region": "North East India",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "servings": 2,
+      "description": "Tangy fish curry made with tomatoes or elephant apple.",
+      "ingredients": [
+        {
+          "item": "Rohu/Katla Fish",
+          "quantity": "4 pieces"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": "3-4 chopped"
+        },
+        {
+          "item": "Lemon Juice/Elephant Apple (Ou Tenga)",
+          "quantity": "2 tbsp/1 cup"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "1 boiled & mashed"
+        },
+        {
+          "item": "Mustard Oil",
+          "quantity": "3 tbsp"
+        },
+        {
+          "item": "Panch Phoron",
+          "quantity": "1/2 tsp"
+        }
+      ],
+      "instructions": [
+        "Marinate fish with turmeric and salt. Fry lightly in mustard oil and set aside.",
+        "In the same oil, splutter panch phoron and green chilies.",
+        "Add tomatoes and cook until soft and pulpy.",
+        "Add water, turmeric, and mashed potato (thickener). Bring to a boil.",
+        "Add the fried fish and simmer for 5 minutes.",
+        "Add lemon juice or ou tenga slices for sourness. Simmer for another 2 minutes and serve."
+      ],
+      "imageUrl": "/recipes/masor-tenga.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "sk1",
+      "title": "Momos",
+      "slug": "momos",
+      "state": "Sikkim",
+      "region": "North East India",
+      "prepTime": "45 mins",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "description": "Steamed dumplings filled with meat or vegetables.",
+      "ingredients": [
+        {
+          "item": "Maida (All Purpose Flour)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Minced Meat/Cabbage",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Onions",
+          "quantity": "1 finely chopped"
+        },
+        {
+          "item": "Ginger & Garlic",
+          "quantity": "1 tbsp minced"
+        },
+        {
+          "item": "Soy Sauce",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Oil/Butter",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        "Dough: Mix flour and water to make a firm dough. Rest for 30 mins.",
+        "Filling: Mix minced meat/veg with onions, ginger, garlic, soy sauce, and oil.",
+        "Roll out small, thin circles of dough.",
+        "Place a spoonful of filling in the center.",
+        "Pleat the edges together to seal the momo.",
+        "Steam for 10-12 minutes until the skin looks translucent."
+      ],
+      "imageUrl": "/recipes/momos.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian"
+      ]
+    },
+    {
+      "id": "nl1",
+      "title": "Smoked Pork with Bamboo Shoot",
+      "slug": "smoked-pork-bamboo",
+      "state": "Nagaland",
+      "region": "North East India",
+      "prepTime": "20 mins",
+      "cookTime": "1 hour",
+      "servings": 4,
+      "description": "Signature Naga dish with fiery chilies.",
+      "ingredients": [
+        {
+          "item": "Smoked Pork",
+          "quantity": "500g cubes"
+        },
+        {
+          "item": "Fermented Bamboo Shoots",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Raja Mircha (Ghost Pepper)",
+          "quantity": "1-2"
+        },
+        {
+          "item": "Ginger & Garlic",
+          "quantity": "crushed"
+        },
+        {
+          "item": "Tomato",
+          "quantity": "1 chopped"
+        }
+      ],
+      "instructions": [
+        "Wash the smoked pork thoroughly with warm water.",
+        "Pressure cook pork with a little water and salt until tender (3-4 whistles).",
+        "In a pan, add the cooked pork along with its stock.",
+        "Add bamboo shoots, crushed ginger-garlic, tomato, and raja mircha.",
+        "Cook on medium heat until the gravy thickens and flavors meld (approx. 15-20 mins).",
+        "Serve hot with steamed rice."
+      ],
+      "imageUrl": "/recipes/smoked-pork-bamboo.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "mn1",
+      "title": "Eromba",
+      "slug": "eromba",
+      "state": "Manipur",
+      "region": "North East India",
+      "prepTime": "20 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Mash of boiled vegetables and fermented fish.",
+      "ingredients": [
+        {
+          "item": "Fermented Bamboo Shoots",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "2 boiled"
+        },
+        {
+          "item": "Ngari (Fermented Fish)",
+          "quantity": "4-5 medium pieces"
+        },
+        {
+          "item": "Ghost Pepper (Raja Mircha)",
+          "quantity": "1-2 (adjust spice)"
+        },
+        {
+          "item": "Spring Onions/Chives",
+          "quantity": "for garnish"
+        },
+        {
+          "item": "Salt",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "Steam or roast the Ngari (fermented fish) and Raja Mircha until fragrant.",
+        "Boil the potatoes and bamboo shoots until soft. Drain water.",
+        "In a bowl, mash the roasted Ngari and chilies into a paste with a little salt.",
+        "Add the boiled potatoes and bamboo shoots to the bowl.",
+        "Mash everything together (traditionally done by hand) to mix the flavors well.",
+        "The texture should be a coarse mash, not a smooth puree.",
+        "Garnish generously with chopped spring onions or chives.",
+        "Serve as a spicy side dish with steamed rice."
+      ],
+      "imageUrl": "/recipes/eromba.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "mg1",
+      "title": "Jadoh",
+      "slug": "jadoh",
+      "state": "Meghalaya",
+      "region": "North East India",
+      "prepTime": "15 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Red rice cooked with pork.",
+      "ingredients": [
+        {
+          "item": "Short Grain Rice (Joha or Hill Rice)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Pork",
+          "quantity": "300g (with fat)"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Ginger Garlic Paste",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Black Sesame Seeds (Dohneiiong)",
+          "quantity": "1 tbsp (optional paste)"
+        },
+        {
+          "item": "Turmeric",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Bay Leaves",
+          "quantity": "2"
+        },
+        {
+          "item": "Vegetable Oil",
+          "quantity": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        "Wash rice and soak for 30 minutes.",
+        "Cut pork into small bite-sized cubes (keep the fat, it adds flavor).",
+        "Heat oil in a heavy-bottomed pot. Sauté onions, bay leaves, and ginger-garlic paste.",
+        "Add turmeric and black pepper. Add pork pieces and fry until browned.",
+        "Add the soaked rice and sauté for 2-3 minutes with the meat.",
+        "Pour in 4 cups of water (or meat broth). Stir well.",
+        "Cover and cook on low heat until rice is fluffy and meat is tender (approx 20 mins).",
+        "Fluff with a fork and serve hot."
+      ],
+      "imageUrl": "/recipes/jadoh.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "mz1",
+      "title": "Bai",
+      "slug": "bai",
+      "state": "Mizoram",
+      "region": "North East India",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Stew made with pork sauce, bamboo shoots, and vegetables.",
+      "ingredients": [
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "Beans, Eggplant, Mustard Greens"
+        },
+        {
+          "item": "Pork Sauce (Saum)",
+          "quantity": "1 tbsp (or fermented pork fat)"
+        },
+        {
+          "item": "Bamboo Shoots",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Water",
+          "quantity": "3 cups"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "3-4"
+        },
+        {
+          "item": "Salt",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "Bring water to a boil in a pot.",
+        "Add the pork sauce/fat and salt.",
+        "Add the harder vegetables first (beans, bamboo shoots). Boil for 5-10 mins.",
+        "Add leafy greens and chilies. Cook until soft but not mushy.",
+        "The stew should be watery and flavorful. Serve hot with rice."
+      ],
+      "imageUrl": "/recipes/bai.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "tr1",
+      "title": "Mui Borok",
+      "slug": "mui-borok",
+      "state": "Tripura",
+      "region": "North East India",
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Traditional plate featuring Berma (dried fermented fish).",
+      "ingredients": [
+        {
+          "item": "Berma (Fermented Fish)",
+          "quantity": "2-3 pieces"
+        },
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "Beans, Potatoes, Tomato"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "5-6 (spicy)"
+        },
+        {
+          "item": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "item": "Water",
+          "quantity": "2 cups"
+        }
+      ],
+      "instructions": [
+        "Wash the Berma fish gently.",
+        "Boil water in a pot. Add the Berma, chopped vegetables, and slit green chilies.",
+        "Cover and cook until vegetables are tender.",
+        "Mash the chilies into the broth for heat.",
+        "Serve hot with plain rice. (No oil is used in this dish)."
+      ],
+      "imageUrl": "/recipes/mui-borok.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "ar1",
+      "title": "Thukpa",
+      "slug": "thukpa",
+      "state": "Arunachal Pradesh",
+      "region": "North East India",
+      "prepTime": "20 mins",
+      "cookTime": "20 mins",
+      "servings": 2,
+      "description": "Hot noodle soup with vegetables or meat.",
+      "ingredients": [
+        {
+          "item": "Noodles",
+          "quantity": "1 packet boiled"
+        },
+        {
+          "item": "Chicken/Vegetable Broth",
+          "quantity": "4 cups"
+        },
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "Carrot, Cabbage, Beans"
+        },
+        {
+          "item": "Chicken (optional)",
+          "quantity": "1/2 cup shredded"
+        },
+        {
+          "item": "Ginger & Garlic",
+          "quantity": "1 tbsp minced"
+        },
+        {
+          "item": "Soy Sauce",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Heat a little oil, sauté ginger and garlic.",
+        "Add chopped vegetables (and chicken) and stir-fry for 2 mins.",
+        "Pour in the broth and bring to a boil. Simmer for 5 mins.",
+        "Add soy sauce, salt, and pepper.",
+        "Divide boiled noodles into bowls.",
+        "Ladle the hot soup and veggies over the noodles. Garnish with spring onions."
+      ],
+      "imageUrl": "/recipes/thukpa.jpg",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "chd1",
+      "title": "Amritsari Kulcha",
+      "slug": "amritsari-kulcha",
+      "state": "Chandigarh",
+      "region": "North India",
+      "prepTime": "2 hours",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Stuffed flatbread famous in Punjab and Chandigarh.",
+      "ingredients": [
+        {
+          "item": "Maida (All Purpose Flour)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "3 boiled & mashed"
+        },
+        {
+          "item": "Onions",
+          "quantity": "1 finely chopped"
+        },
+        {
+          "item": "Anardana (Dried Pomegranate)",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Butter",
+          "quantity": "plenty for serving"
+        }
+      ],
+      "instructions": [
+        "Dough: Mix maida, salt, sugar, baking powder, and curd/milk. Knead soft dough. Rest for 2 hours.",
+        "Filling: Mix mashed potatoes with onions, chilies, anardana, coriander, and spices.",
+        "Roll a ball of dough, place filling in center, seal, and roll gently into a disc.",
+        "Wet one side of the kulcha and stick it onto a hot tawa (or bake in tandoor).",
+        "Cook until puffed and browned. Crisp the top directly on flame if using tawa.",
+        "Crush the hot kulcha with hands to flake it and top with a dollop of butter."
+      ],
+      "imageUrl": "/recipes/amritsari-kulcha.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "ld1",
+      "title": "Skyu",
+      "slug": "skyu",
+      "state": "Ladakh",
+      "region": "North India",
+      "prepTime": "30 mins",
+      "cookTime": "45 mins",
+      "servings": 4,
+      "description": "Traditional thumb-sized wheat dough stew with root veggies.",
+      "ingredients": [
+        {
+          "item": "Wheat Flour",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "2 diced"
+        },
+        {
+          "item": "Carrots",
+          "quantity": "2 diced"
+        },
+        {
+          "item": "Milk/Water",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Turnips",
+          "quantity": "1 diced"
+        }
+      ],
+      "instructions": [
+        "Knead wheat flour with water into a stiff dough.",
+        "Pinch small pieces and shape them into thumb-pressed shell shapes (Skyu).",
+        "In a pot, boil water/milk with diced potatoes, carrots, and turnips.",
+        "Add the dough shells to the boiling stew.",
+        "Simmer until the veggies and pasta-like shells are cooked.",
+        "Serve hot as a comforting meal."
+      ],
+      "imageUrl": "/recipes/skyu.jpg",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
+    },
+    {
+      "id": "py1",
+      "title": "Pondicherry Fish Curry",
+      "slug": "pondicherry-fish-curry",
+      "state": "Puducherry",
+      "region": "South India",
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Creole-style curry with coconut milk and mild spices.",
+      "ingredients": [
+        {
+          "item": "Fish (Seer/Kingfish)",
+          "quantity": "500g"
+        },
+        {
+          "item": "Coconut Milk",
+          "quantity": "1 cup (thick)"
+        },
+        {
+          "item": "Onion",
+          "quantity": "1 chopped"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "2 slit"
+        },
+        {
+          "item": "Fennel Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Fenugreek Seeds",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Curry Leaves",
+          "quantity": "1 sprig"
+        },
+        {
+          "item": "Tamarind Juice",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Turmeric & Red Chili Powder",
+          "quantity": "1 tsp each"
+        }
+      ],
+      "instructions": [
+        "Marinate fish pieces with turmeric and salt for 15 minutes.",
+        "Heat oil in a pan. Splutter fennel seeds, fenugreek seeds, and curry leaves.",
+        "Add chopped onions and green chilies. Sauté until soft.",
+        "Add tomatoes and cook until mushy. Stir in chili powder and turmeric.",
+        "Pour in the tamarind juice and a little water. Bring to a boil.",
+        "Gently slide in the fish pieces. Cover and cook for 5-7 minutes.",
+        "Reduce heat and pour in the thick coconut milk. Simmer for 2 minutes (do not boil vigorously).",
+        "Serve hot with steamed rice or Idiyappam."
+      ],
+      "imageUrl": "/recipes/pondicherry-fish-curry.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "ldw1",
+      "title": "Mus Kavaab",
+      "slug": "mus-kavaab",
+      "state": "Lakshadweep",
+      "region": "South India",
+      "prepTime": "20 mins",
+      "cookTime": "40 mins",
+      "servings": 4,
+      "description": "Spicy tuna curry, a staple of the islands.",
+      "ingredients": [
+        {
+          "item": "Tuna Fish (Boneless)",
+          "quantity": "500g cubes"
+        },
+        {
+          "item": "Grated Coconut",
+          "quantity": "1 cup"
+        },
+        {
+          "item": "Coriander Powder",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Chili Powder",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Turmeric",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 finely chopped"
+        },
+        {
+          "item": "Curry Leaves",
+          "quantity": "2 sprigs"
+        }
+      ],
+      "instructions": [
+        "Make a paste of grated coconut, coriander powder, chili powder, and turmeric.",
+        "Marinate the tuna cubes with half of this paste and salt for 30 mins.",
+        "Heat oil, sauté onions and curry leaves until golden.",
+        "Add the remaining spice paste and cook until raw smell goes.",
+        "Add the marinated fish and a little water.",
+        "Cover and cook on low heat until the gravy is thick and oil separates."
+      ],
+      "imageUrl": "/recipes/mus-kavaab.jpg",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "an1",
+      "title": "Coconut Prawn Curry",
+      "slug": "coconut-prawn-curry",
+      "state": "Andaman and Nicobar Islands",
+      "region": "South India",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Fresh seafood curry with island spices.",
+      "ingredients": [
+        {
+          "item": "Tiger Prawns",
+          "quantity": "500g cleaned"
+        },
+        {
+          "item": "Coconut Milk",
+          "quantity": "1.5 cups"
+        },
+        {
+          "item": "Mustard Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "3 slit"
+        },
+        {
+          "item": "Turmeric",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Lime Juice",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Clean and devein the prawns. Marinate with turmeric and salt.",
+        "Heat oil, splutter mustard seeds and curry leaves.",
+        "Add green chilies and onions (optional), sauté until soft.",
+        "Add the prawns and stir fry for 2 minutes until pink.",
+        "Pour in the coconut milk and simmer gently for 5 minutes (do not overcook).",
+        "Finish with a squeeze of lime juice."
+      ],
+      "imageUrl": "/recipes/coconut-prawn-curry.jpg",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "dd1",
+      "title": "Crab Curry",
+      "slug": "crab-curry",
+      "state": "Dadra and Nagar Haveli and Daman and Diu",
+      "region": "West India",
+      "prepTime": "30 mins",
+      "cookTime": "30 mins",
+      "servings": 2,
+      "description": "Coastal delicacy cooked with local spices.",
+      "ingredients": [
+        {
+          "item": "Crabs",
+          "quantity": "4 medium, cleaned"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": "2 chopped"
+        },
+        {
+          "item": "Garlic Ginger Paste",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Malvani/Garam Masala",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Coconut Paste",
+          "quantity": "1/2 cup (optional)"
+        }
+      ],
+      "instructions": [
+        "Clean crabs thoroughly and break the claws slightly.",
+        "Heat oil, sauté onions and ginger-garlic paste until golden.",
+        "Add tomatoes and cook until soft. Add masala powders.",
+        "Toss in the crabs and coat with the masala.",
+        "Add water (and coconut paste if using) and cover.",
+        "Cook for 15-20 minutes until the shells turn orange/red."
+      ],
+      "imageUrl": "/recipes/crab-curry.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Non-Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "fam1",
+      "title": "Samosa",
+      "slug": "samosa",
+      "state": "Delhi",
+      "region": "North India",
+      "prepTime": "45 mins",
+      "cookTime": "30 mins",
+      "servings": 6,
+      "description": "Fried pastry with a savory filling, loved worldwide.",
+      "ingredients": [
+        {
+          "item": "Maida (All Purpose Flour)",
+          "quantity": "2 cups"
+        },
+        {
+          "item": "Ghee/Oil",
+          "quantity": "1/4 cup (for dough)"
+        },
+        {
+          "item": "Carom Seeds (Ajwain)",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "4 boiled & diced"
+        },
+        {
+          "item": "Green Peas",
+          "quantity": "1/2 cup"
+        },
+        {
+          "item": "Spices",
+          "quantity": "Cumin, Coriander, Amchur, Garam Masala"
+        }
+      ],
+      "instructions": [
+        "Dough: Rub ghee into flour until crumbly. Add water to knead a stiff dough. Rest for 30 mins.",
+        "Filling: Heat oil, splutter cumin. Add peas, potatoes, and spices. Cook for 5 mins and cool.",
+        "Roll a ball of dough into an oval. Cut in half.",
+        "Form a cone with one half, sealing the straight edge with water.",
+        "Stuff with filling and seal the bottom edge firmly.",
+        "Deep fry in medium-hot oil until golden and crispy (approx. 10-12 mins)."
+      ],
+      "imageUrl": "/recipes/samosa.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Vegan"
+      ]
+    },
+    {
+      "id": "fam2",
+      "title": "Palak Paneer",
+      "slug": "palak-paneer",
+      "state": "Punjab",
+      "region": "North India",
+      "prepTime": "20 mins",
+      "cookTime": "20 mins",
+      "servings": 4,
+      "description": "Cottage cheese in a smooth spinach gravy.",
+      "ingredients": [
+        {
+          "item": "Spinach (Palak)",
+          "quantity": "500g washed"
+        },
+        {
+          "item": "Paneer (Cottage Cheese)",
+          "quantity": "250g cubes"
+        },
+        {
+          "item": "Onion",
+          "quantity": "1 finely chopped"
+        },
+        {
+          "item": "Tomato",
+          "quantity": "1 finely chopped"
+        },
+        {
+          "item": "Ginger Garlic Paste",
+          "quantity": "1 tbsp"
+        },
+        {
+          "item": "Fresh Cream",
+          "quantity": "2 tbsp"
+        },
+        {
+          "item": "Garam Masala",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Cumin Seeds",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Blanch spinach in boiling water for 2 minutes, then immediately plunge into ice water (to keep it green).",
+        "Blend the drained spinach with green chilies into a smooth puree.",
+        "Heat oil/ghee in a pan, splutter cumin seeds.",
+        "Sauté onions and ginger-garlic paste until golden brown.",
+        "Add tomatoes and spices (turmeric, red chili, coriander). Cook until oil separates.",
+        "Add the spinach puree and simmer for 5 minutes.",
+        "Add paneer cubes and garam masala. Mix gently.",
+        "Finish with fresh cream and serve hot with Naan or Roti."
+      ],
+      "imageUrl": "/recipes/palak-paneer.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "id": "fam3",
+      "title": "Masala Dosa",
+      "slug": "masala-dosa",
+      "state": "Karnataka",
+      "region": "South India",
+      "prepTime": "12 hours",
+      "cookTime": "10 mins",
+      "servings": 4,
+      "description": "Crispy rice crepe filled with spiced potato mash.",
+      "ingredients": [
+        {
+          "item": "Dosa Batter",
+          "quantity": "4 cups (fermented)"
+        },
+        {
+          "item": "Potatoes",
+          "quantity": "4 boiled & mashed"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 sliced"
+        },
+        {
+          "item": "Green Chilies",
+          "quantity": "3-4 chopped"
+        },
+        {
+          "item": "Mustard Seeds",
+          "quantity": "1 tsp"
+        },
+        {
+          "item": "Turmeric Powder",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "item": "Curry Leaves",
+          "quantity": "1 sprig"
+        },
+        {
+          "item": "Urad Dal",
+          "quantity": "1 tsp"
+        }
+      ],
+      "instructions": [
+        "Filling: Heat oil, splutter mustard seeds, urad dal, and curry leaves.",
+        "Add sliced onions and green chilies. Sauté until translucent.",
+        "Add turmeric and salt. Mix in the boiled mashed potatoes.",
+        "Add a splash of water to keep it moist. Garnish with coriander.",
+        "Dosa: Heat a cast-iron tawa or non-stick pan. Pour a ladle of batter.",
+        "Spread in a circular motion to make a thin crepe. Drizzle oil/ghee around edges.",
+        "Cook until the bottom is golden brown and crisp.",
+        "Place a spoonful of potato filling in the center, fold over, and serve hot with chutney."
+      ],
+      "imageUrl": "/recipes/masala-dosa.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian",
+        "Gluten-Free",
+        "Vegan"
+      ]
+    },
+    {
+      "id": "fam4",
+      "title": "Pav Bhaji",
+      "slug": "pav-bhaji",
+      "state": "Maharashtra",
+      "region": "West India",
+      "prepTime": "20 mins",
+      "cookTime": "30 mins",
+      "servings": 4,
+      "description": "Spicy mashed vegetable curry served with soft buttered buns.",
+      "ingredients": [
+        {
+          "item": "Mixed Vegetables",
+          "quantity": "Potatoes, Cauliflower, Peas, Carrots (boiled)"
+        },
+        {
+          "item": "Pav Buns",
+          "quantity": "8"
+        },
+        {
+          "item": "Butter",
+          "quantity": "100g"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2 finely chopped"
+        },
+        {
+          "item": "Capsicum",
+          "quantity": "1 finely chopped"
+        },
+        {
+          "item": "Tomatoes",
+          "quantity": "4 finely chopped"
+        },
+        {
+          "item": "Pav Bhaji Masala",
+          "quantity": "2 tbsp"
+        }
+      ],
+      "instructions": [
+        "Boil and mash the vegetables thoroughly.",
+        "Heat butter on a large tawa/pan. Sauté onions and capsicum.",
+        "Add tomatoes and cook until mushy. Add pav bhaji masala and salt.",
+        "Add the mashed veggies and a little water. Mash and cook for 10-15 mins.",
+        "Add a dollop of butter and coriander leaves.",
+        "Slice pav buns, toast with butter on the pan, and serve with the bhaji."
+      ],
+      "imageUrl": "/recipes/pav-bhaji.webp",
+      "rating": 5,
+      "reviewCount": 10,
+      "dietary": [
+        "Vegetarian"
+      ]
     }
   ]
 }

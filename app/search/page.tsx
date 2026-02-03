@@ -1,23 +1,31 @@
-'use client';
 
-import { Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
-import { recipes, states } from '@/data/recipes';
+import { db } from '@/lib/db';
+import { states } from '@/data/recipes';
 import RecipeCard from '@/components/RecipeCard';
 import StateCard from '@/components/StateCard';
 
-function SearchContent() {
-  const searchParams = useSearchParams();
-  const q = (searchParams.get('q') || '').trim().toLowerCase();
+export const dynamic = 'force-dynamic';
+
+interface SearchPageProps {
+  searchParams: Promise<{ q?: string }>;
+}
+
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  const { q: rawQ } = await searchParams;
+  const q = (rawQ || '').trim().toLowerCase();
   
+  const allRecipes = db.getRecipes();
+
   const recipeMatches = q
-    ? recipes.filter(
+    ? allRecipes.filter(
         r =>
           r.title.toLowerCase().includes(q) ||
           r.description.toLowerCase().includes(q) ||
-          r.state.toLowerCase().includes(q)
+          r.state.toLowerCase().includes(q) ||
+          r.region.toLowerCase().includes(q)
       )
     : [];
+
   const stateMatches = q
     ? states.filter(
         s =>
@@ -63,12 +71,3 @@ function SearchContent() {
     </div>
   );
 }
-
-export default function SearchPage() {
-  return (
-    <Suspense fallback={<div className="container mx-auto px-4 py-10 text-center">Loading search...</div>}>
-      <SearchContent />
-    </Suspense>
-  );
-}
-

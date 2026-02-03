@@ -1,11 +1,15 @@
 import Image from 'next/image';
-import { states, recipes, mealPlates } from '@/data/recipes';
+import { states, mealPlates } from '@/data/recipes';
+import { db } from '@/lib/db';
 import StateCard from '@/components/StateCard';
 import RecipeCard from '@/components/RecipeCard';
 import MealPlateCard from '@/components/MealPlateCard';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
+  const recipes = [...db.getRecipes()].reverse();
   return (
     <div className="space-y-16">
       <section className="bg-[var(--ak-bg-soft)]">

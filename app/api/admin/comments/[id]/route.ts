@@ -25,11 +25,21 @@ async function isAdmin() {
   return user && user.role === 'admin';
 }
 
-export async function GET() {
+interface Props {
+  params: Promise<{ id: string }>;
+}
+
+export async function DELETE(request: Request, { params }: Props) {
   if (!(await isAdmin())) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const users = db.getAllUsers();
-  return NextResponse.json({ users });
+  const { id } = await params;
+  const success = db.deleteComment(id);
+
+  if (success) {
+    return NextResponse.json({ success: true });
+  } else {
+    return NextResponse.json({ error: 'Comment not found' }, { status: 404 });
+  }
 }

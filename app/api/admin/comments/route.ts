@@ -30,6 +30,6 @@ export async function GET() {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const users = db.getAllUsers();
-  return NextResponse.json({ users });
+  const comments = db.getAllComments();
+  return NextResponse.json({ comments });
 }

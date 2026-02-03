@@ -63,12 +63,38 @@ export default function AdminPage() {
         </button>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
           <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider">Total Users</h3>
           <p className="text-3xl font-bold mt-2 text-[var(--ak-primary)]">{users.length}</p>
         </div>
-        {/* We can add more stats here later like Total Reviews, Active Sessions etc */}
+        
+        <div 
+          className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-shadow group"
+          onClick={() => router.push('/admin/recipes')}
+        >
+          <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider group-hover:text-orange-600 transition-colors">Recipes</h3>
+          <p className="mt-2 text-gray-600 text-sm">Manage, Add, or Delete Recipes</p>
+          <span className="inline-block mt-4 text-orange-600 font-medium text-sm group-hover:underline">Manage Recipes &rarr;</span>
+        </div>
+
+        <div 
+          className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-shadow group"
+          onClick={() => router.push('/admin/users')}
+        >
+          <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider group-hover:text-orange-600 transition-colors">Users</h3>
+          <p className="mt-2 text-gray-600 text-sm">Block, Unblock, or Delete Users</p>
+          <span className="inline-block mt-4 text-orange-600 font-medium text-sm group-hover:underline">Manage Users &rarr;</span>
+        </div>
+
+        <div 
+          className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 cursor-pointer hover:shadow-md transition-shadow group"
+          onClick={() => router.push('/admin/comments')}
+        >
+          <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider group-hover:text-orange-600 transition-colors">Comments</h3>
+          <p className="mt-2 text-gray-600 text-sm">View and Delete Comments</p>
+          <span className="inline-block mt-4 text-orange-600 font-medium text-sm group-hover:underline">Manage Comments &rarr;</span>
+        </div>
       </div>
 
       <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">

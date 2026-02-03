@@ -1,6 +1,7 @@
+
 import { NextResponse } from 'next/server';
-import { db } from '@/lib/db';
 import { cookies } from 'next/headers';
+import { db } from '@/lib/db';
 
 export async function POST() {
   const cookieStore = await cookies();
@@ -10,7 +11,7 @@ export async function POST() {
     db.deleteSession(sessionId);
   }
 
-  cookieStore.delete('session_id');
-
-  return NextResponse.json({ success: true });
+  const response = NextResponse.json({ success: true });
+  response.cookies.delete('session_id');
+  return response;
 }

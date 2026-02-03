@@ -16,7 +16,7 @@ export async function GET() {
   }
 
   const user = db.findUserById(session.userId);
-  if (!user) {
+  if (!user || user.status === 'blocked') {
     return NextResponse.json({ user: null });
   }
 

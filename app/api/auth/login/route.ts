@@ -16,6 +16,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
     }
 
+    if (user.status === 'blocked') {
+      return NextResponse.json({ error: 'Your account has been blocked.' }, { status: 403 });
+    }
+
     const session = db.createSession(user.id);
 
     // Set cookie

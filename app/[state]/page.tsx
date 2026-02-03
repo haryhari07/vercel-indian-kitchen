@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
-import { states, recipes } from '@/data/recipes';
+import { states } from '@/data/recipes';
+import { db } from '@/lib/db';
 import RecipeCard from '@/components/RecipeCard';
+
+export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
   return states.map((state) => ({
@@ -20,7 +23,9 @@ export default async function StatePage({ params }: PageProps) {
     notFound();
   }
 
-  const stateRecipes = recipes.filter((recipe) => recipe.state === state.name);
+  const allRecipes = db.getRecipes();
+  // Filter by state name exactly as stored in DB
+  const stateRecipes = allRecipes.filter((recipe) => recipe.state === state.name);
 
   return (
     <div className="container mx-auto px-4 py-12">
