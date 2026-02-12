@@ -7,10 +7,14 @@ import BookmarkButton from '@/components/BookmarkButton';
 import RecipeActions from '@/components/RecipeActions';
 import CommentSection from '@/components/CommentSection';
 import SimilarRecipes from '@/components/SimilarRecipes';
+import { Metadata } from 'next';
+
+export const revalidate = 3600; // Revalidate every hour
 
 // We can keep this for ISR, fetching from DB
 export async function generateStaticParams() {
-  const recipes = db.getRecipes();
+  const recipes = await db.getRecipes();
+  if (!Array.isArray(recipes)) return [];
   return recipes.map((recipe) => ({
     slug: recipe.slug,
   }));
@@ -20,16 +24,137 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const recipe = await db.getRecipe(slug);
+
+  if (!recipe) {
+    return {
+      title: 'Recipe Not Found',
+    };
+  }
+
+  return {
+    title: recipe.title,
+    description: recipe.description,
+    openGraph: {
+      title: recipe.title,
+      description: recipe.description,
+      images: [
+        {
+          url: recipe.imageUrl,
+          width: 800,
+          height: 600,
+          alt: recipe.title,
+        },
+      ],
+      type: 'article',
+      publishedTime: new Date().toISOString(), // In real app, use createdAt
+      tags: [recipe.state, ...recipe.dietary],
+    },
+    alternates: {
+      canonical: `/recipe/${recipe.slug}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: recipe.title,
+      description: recipe.description,
+      images: [recipe.imageUrl],
+    },
+  };
+}
+
+function parseDuration(timeStr: string): string {
+  const lower = timeStr.toLowerCase();
+  let minutes = 0;
+  
+  const hourMatch = lower.match(/(\d+)\s*hour/);
+  if (hourMatch) {
+    minutes += parseInt(hourMatch[1]) * 60;
+  }
+  
+  const minMatch = lower.match(/(\d+)\s*min/);
+  if (minMatch) {
+    minutes += parseInt(minMatch[1]);
+  }
+  
+  if (minutes === 0) {
+      // Fallback if no hours or mins found but there is a number (assume mins)
+      const numMatch = lower.match(/(\d+)/);
+      if (numMatch) minutes = parseInt(numMatch[1]);
+      else return 'PT30M';
+  }
+  
+  return `PT${minutes}M`;
+}
+
 export default async function RecipePage({ params }: PageProps) {
   const { slug } = await params;
-  const recipe = db.getRecipe(slug);
+  const recipe = await db.getRecipe(slug);
 
   if (!recipe) {
     notFound();
   }
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: process.env.NEXT_PUBLIC_APP_URL || 'https://indiankitchen.blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: recipe.state,
+            item: `${process.env.NEXT_PUBLIC_APP_URL || 'https://indiankitchen.blog'}/${recipe.state.toLowerCase().replace(/\s+/g, '-')}`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: recipe.title,
+            item: `${process.env.NEXT_PUBLIC_APP_URL || 'https://indiankitchen.blog'}/recipe/${recipe.slug}`,
+          },
+        ],
+      },
+      {
+        '@type': 'Recipe',
+        name: recipe.title,
+        image: recipe.imageUrl,
+        description: recipe.description,
+        prepTime: parseDuration(recipe.prepTime),
+        cookTime: parseDuration(recipe.cookTime),
+        totalTime: parseDuration(recipe.cookTime), // Approximation
+        recipeYield: `${recipe.servings} servings`,
+        recipeIngredient: recipe.ingredients.map(i => `${i.quantity} ${i.item}`),
+        recipeInstructions: recipe.instructions.map((step, index) => ({
+          '@type': 'HowToStep',
+          text: step,
+          position: index + 1,
+        })),
+        recipeCategory: 'Main Course',
+        recipeCuisine: 'Indian',
+        keywords: `${recipe.state}, ${recipe.dietary.join(', ')}, Indian Food`,
+        aggregateRating: recipe.rating ? {
+          '@type': 'AggregateRating',
+          ratingValue: recipe.rating,
+          reviewCount: recipe.reviewCount || 1,
+        } : undefined,
+      }
+    ]
+  };
+
   return (
     <article className="container mx-auto px-4 py-12 max-w-4xl print:py-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mb-6 text-sm breadcrumbs text-gray-500 print:hidden">
         <Link href="/" className="hover:text-orange-600">Home</Link>
         <span className="mx-2">/</span>

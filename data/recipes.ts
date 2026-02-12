@@ -75,13 +75,6 @@ export const states: State[] = [
 
   // South India
   {
-    name: 'South India',
-    slug: 'south-india',
-    region: 'South India',
-    description: 'A culinary journey through the diverse flavors of the southern peninsula.',
-    imageUrl: '/states/south-india.jpg',
-  },
-  {
     name: 'Tamil Nadu',
     slug: 'tamil-nadu',
     region: 'South India',

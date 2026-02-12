@@ -8,7 +8,7 @@ export async function POST() {
   const sessionId = cookieStore.get('session_id')?.value;
 
   if (sessionId) {
-    db.deleteSession(sessionId);
+    await db.deleteSession(sessionId);
   }
 
   const response = NextResponse.json({ success: true });

@@ -11,23 +11,24 @@ async function getUser() {
   // 1. Try NextAuth session
   const session = await getServerSession(authOptions);
   if (session && session.user && session.user.email) {
-    return db.findUserByEmail(session.user.email);
+    return await db.findUserByEmail(session.user.email);
   }
 
   // 2. Try Custom Auth (cookie) if no NextAuth user found
   const cookieStore = await cookies();
   const sessionId = cookieStore.get('session_id')?.value;
   if (sessionId) {
-    const dbSession = db.getSession(sessionId);
+    const dbSession = await db.getSession(sessionId);
     if (dbSession) {
-      return db.findUserById(dbSession.userId);
+      return await db.findUserById(dbSession.userId);
     }
   }
   return null;
 }
 
 export async function GET() {
-  const recipes = db.getRecipes();
+  const recipesData = await db.getRecipes();
+  const recipes = Array.isArray(recipesData) ? recipesData : [];
   return NextResponse.json({ recipes });
 }
 
@@ -100,7 +101,7 @@ export async function POST(request: Request) {
     }
 
     try {
-      const newRecipe = db.createRecipe(body);
+      const newRecipe = await db.createRecipe(body);
       return NextResponse.json({ recipe: newRecipe }, { status: 201 });
     } catch (e: any) {
       return NextResponse.json({ error: e.message || 'Failed to create recipe' }, { status: 400 });

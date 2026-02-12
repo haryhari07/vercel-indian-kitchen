@@ -10,14 +10,14 @@ async function isAdmin() {
   let user = null;
 
   if (session && session.user && session.user.email) {
-    user = db.findUserByEmail(session.user.email);
+    user = await db.findUserByEmail(session.user.email);
   } else {
     const cookieStore = await cookies();
     const sessionId = cookieStore.get('session_id')?.value;
     if (sessionId) {
-      const dbSession = db.getSession(sessionId);
+      const dbSession = await db.getSession(sessionId);
       if (dbSession) {
-        user = db.findUserById(dbSession.userId);
+        user = await db.findUserById(dbSession.userId);
       }
     }
   }
@@ -35,7 +35,7 @@ export async function DELETE(request: Request, { params }: Props) {
   }
 
   const { id } = await params;
-  const success = db.deleteComment(id);
+  const success = await db.deleteComment(id);
 
   if (success) {
     return NextResponse.json({ success: true });

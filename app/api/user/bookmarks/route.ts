@@ -12,12 +12,12 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const session = db.getSession(sessionId);
+    const session = await db.getSession(sessionId);
     if (!session) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const bookmarkedSlugs = db.getUserBookmarks(session.userId);
+    const bookmarkedSlugs = await db.getUserBookmarks(session.userId);
     
     // Enrich with recipe details
     const savedRecipes = recipes.filter(r => bookmarkedSlugs.includes(r.slug));

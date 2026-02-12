@@ -10,7 +10,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing email or password' }, { status: 400 });
     }
 
-    const user = db.findUserByEmail(email);
+    const user = await db.findUserByEmail(email);
 
     if (!user || !db.validatePassword(user, password)) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Your account has been blocked.' }, { status: 403 });
     }
 
-    const session = db.createSession(user.id);
+    const session = await db.createSession(user.id);
 
     // Set cookie
     (await cookies()).set('session_id', session.id, {

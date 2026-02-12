@@ -1,15 +1,32 @@
-<svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Indian Kitchen Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
   <defs>
-    <linearGradient id="potGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f37021"/>
-      <stop offset="100%" stop-color="#d32f2f"/>
+    <linearGradient id="potGradient" x1="256" y1="150" x2="256" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#9A3412" />
     </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.3" />
+    </filter>
   </defs>
-  <rect width="64" height="64" rx="16" fill="#fff7f2"/>
-  <g transform="translate(8,10)">
-    <rect x="8" y="16" width="40" height="22" rx="8" fill="url(#potGradient)"/>
-    <rect x="4" y="12" width="48" height="6" rx="3" fill="#ffb74d"/>
-    <circle cx="48" cy="26" r="4" fill="#ffb74d"/>
-    <path d="M16 8 C18 4, 22 4, 24 8 M24 8 C26 4, 30 4, 32 8 M32 8 C34 4, 38 4, 40 8" stroke="#f37021" stroke-width="2" fill="none" stroke-linecap="round"/>
-  </g>
+  
+  <!-- Steam / Aroma (Stylized and Smooth) -->
+  <path d="M256 60 Q 220 100 256 140" stroke="#F97316" stroke-width="20" stroke-linecap="round" opacity="0.9" fill="none">
+     <animate attributeName="d" values="M256 60 Q 220 100 256 140;M256 50 Q 210 100 256 130;M256 60 Q 220 100 256 140" dur="4s" repeatCount="indefinite" />
+  </path>
+  <path d="M190 80 Q 150 120 190 150" stroke="#F97316" stroke-width="15" stroke-linecap="round" opacity="0.8" fill="none">
+     <animate attributeName="d" values="M190 80 Q 150 120 190 150;M180 70 Q 140 120 180 160;M190 80 Q 150 120 190 150" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M322 80 Q 360 120 322 150" stroke="#F97316" stroke-width="15" stroke-linecap="round" opacity="0.8" fill="none">
+     <animate attributeName="d" values="M322 80 Q 360 120 322 150;M332 70 Q 370 120 332 160;M322 80 Q 360 120 322 150" dur="3.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Handi (Clay Pot) Body -->
+  <path d="M110 200 C 110 200, 100 450, 256 450 C 412 450, 402 200, 402 200 Z" fill="url(#potGradient)" filter="url(#shadow)" />
+  
+  <!-- Pot Rim -->
+  <rect x="90" y="160" width="332" height="40" rx="10" fill="#C2410C" stroke="#7C2D12" stroke-width="8" />
+  
+  <!-- Decorative Band (Subtle) -->
+  <path d="M120 240 C 120 240, 256 260, 392 240" stroke="#FEF3C7" stroke-width="4" stroke-opacity="0.4" fill="none" />
+
 </svg>

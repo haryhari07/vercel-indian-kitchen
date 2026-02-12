@@ -14,16 +14,16 @@ export async function GET(
     let userRating = null;
 
     if (sessionId) {
-      const session = db.getSession(sessionId);
+      const session = await db.getSession(sessionId);
       if (session) {
-        const rating = db.getRating(session.userId, slug);
+        const rating = await db.getRating(session.userId, slug);
         if (rating) {
           userRating = rating.rating;
         }
       }
     }
 
-    const average = db.getRecipeAverageRating(slug);
+    const average = await db.getRecipeAverageRating(slug);
     
     return NextResponse.json({
       userRating,
@@ -50,7 +50,7 @@ export async function POST(
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const session = db.getSession(sessionId);
+    const session = await db.getSession(sessionId);
     if (!session) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
@@ -59,9 +59,9 @@ export async function POST(
       return NextResponse.json({ error: 'Invalid rating' }, { status: 400 });
     }
 
-    db.upsertRating(session.userId, slug, rating);
+    await db.upsertRating(session.userId, slug, rating);
     
-    const average = db.getRecipeAverageRating(slug);
+    const average = await db.getRecipeAverageRating(slug);
 
     return NextResponse.json({
       success: true,

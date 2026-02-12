@@ -10,12 +10,12 @@ export async function GET() {
     return NextResponse.json({ user: null });
   }
 
-  const session = db.getSession(sessionId);
+  const session = await db.getSession(sessionId);
   if (!session) {
     return NextResponse.json({ user: null });
   }
 
-  const user = db.findUserById(session.userId);
+  const user = await db.findUserById(session.userId);
   if (!user || user.status === 'blocked') {
     return NextResponse.json({ user: null });
   }

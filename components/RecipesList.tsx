@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import RecipeCard from '@/components/RecipeCard';
 import { Recipe } from '@/lib/db';
 import { states } from '@/data/recipes';
@@ -15,6 +15,12 @@ export default function RecipesList({ initialRecipes }: RecipesListProps) {
   const [filterRegion, setFilterRegion] = useState('All');
   const [filterDietary, setFilterDietary] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filterState, filterRegion, filterDietary, searchQuery]);
 
   const regions = Array.from(new Set(states.map(s => s.region))).sort();
   const dietaryOptions = ['Vegetarian', 'Non-Vegetarian', 'Gluten-Free', 'Vegan'];
@@ -30,6 +36,12 @@ export default function RecipesList({ initialRecipes }: RecipesListProps) {
 
     return matchesState && matchesRegion && matchesDietary && matchesSearch;
   });
+
+  const totalPages = Math.ceil(filteredRecipes.length / itemsPerPage);
+  const paginatedRecipes = filteredRecipes.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <div className="space-y-8">
@@ -98,8 +110,8 @@ export default function RecipesList({ initialRecipes }: RecipesListProps) {
 
       {/* Results */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {filteredRecipes.length > 0 ? (
-          filteredRecipes.map((recipe) => (
+        {paginatedRecipes.length > 0 ? (
+          paginatedRecipes.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} priority={false} />
           ))
         ) : (
@@ -108,6 +120,43 @@ export default function RecipesList({ initialRecipes }: RecipesListProps) {
           </div>
         )}
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center gap-2 mt-12">
+          <button
+            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+            disabled={currentPage === 1}
+            className="px-4 py-2 rounded-lg border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+          >
+            Previous
+          </button>
+          
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <button
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all ${
+                  currentPage === page
+                    ? 'bg-[var(--ak-primary)] text-white shadow-md'
+                    : 'border border-gray-200 hover:bg-gray-50 text-gray-700'
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+            disabled={currentPage === totalPages}
+            className="px-4 py-2 rounded-lg border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+          >
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 }

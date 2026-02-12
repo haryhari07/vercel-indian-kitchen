@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 import { states } from '@/data/recipes';
@@ -377,11 +378,12 @@ export default function NewRecipePage() {
                   
                   {formData.imageUrl ? (
                     <div className="w-full relative group">
-                      <div className="aspect-w-16 aspect-h-12 w-full rounded-lg overflow-hidden bg-gray-100 mb-4 shadow-sm">
-                        <img 
+                      <div className="aspect-w-16 aspect-h-12 w-full rounded-lg overflow-hidden bg-gray-100 mb-4 shadow-sm relative">
+                        <Image 
                           src={formData.imageUrl} 
                           alt="Preview" 
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
                         />
                       </div>
                       <p className="text-xs text-green-600 font-medium flex items-center justify-center gap-1 mb-2">

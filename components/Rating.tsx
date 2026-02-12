@@ -53,6 +53,7 @@ export default function Rating({
       <button
         key={index}
         type="button"
+        aria-label={`Rate ${ratingValue} out of 5 stars`}
         className={`${readOnly ? 'cursor-default' : 'cursor-pointer'} focus:outline-none transition-transform ${!readOnly && 'hover:scale-110'}`}
         onClick={() => handleClick(ratingValue)}
         onMouseEnter={() => handleMouseEnter(ratingValue)}

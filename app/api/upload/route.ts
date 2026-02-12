@@ -11,16 +11,16 @@ async function getUser() {
   // 1. Try NextAuth session
   const session = await getServerSession(authOptions);
   if (session && session.user && session.user.email) {
-    return db.findUserByEmail(session.user.email);
+    return await db.findUserByEmail(session.user.email);
   }
 
   // 2. Try Custom Auth (cookie) if no NextAuth user found
   const cookieStore = await cookies();
   const sessionId = cookieStore.get('session_id')?.value;
   if (sessionId) {
-    const dbSession = db.getSession(sessionId);
+    const dbSession = await db.getSession(sessionId);
     if (dbSession) {
-      return db.findUserById(dbSession.userId);
+      return await db.findUserById(dbSession.userId);
     }
   }
   return null;

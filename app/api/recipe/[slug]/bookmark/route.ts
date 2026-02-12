@@ -15,12 +15,12 @@ export async function GET(
       return NextResponse.json({ isBookmarked: false });
     }
 
-    const session = db.getSession(sessionId);
+    const session = await db.getSession(sessionId);
     if (!session) {
       return NextResponse.json({ isBookmarked: false });
     }
 
-    const isBookmarked = db.isBookmarked(session.userId, slug);
+    const isBookmarked = await db.isBookmarked(session.userId, slug);
     return NextResponse.json({ isBookmarked });
   } catch (error) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
@@ -40,12 +40,12 @@ export async function POST(
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const session = db.getSession(sessionId);
+    const session = await db.getSession(sessionId);
     if (!session) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const isBookmarked = db.toggleBookmark(session.userId, slug);
+    const isBookmarked = await db.toggleBookmark(session.userId, slug);
 
     return NextResponse.json({ isBookmarked });
   } catch (error) {

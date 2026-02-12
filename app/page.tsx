@@ -5,11 +5,26 @@ import StateCard from '@/components/StateCard';
 import RecipeCard from '@/components/RecipeCard';
 import MealPlateCard from '@/components/MealPlateCard';
 import Link from 'next/link';
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
+import { cookies } from "next/headers";
 
+// Force dynamic rendering to ensure fresh data and auth state
 export const dynamic = 'force-dynamic';
 
-export default function Home() {
-  const recipes = [...db.getRecipes()].reverse();
+export default async function Home() {
+  const recipes = (await db.getLatestRecipes(4)) || [];
+
+  // Check for Custom Auth Session
+  const cookieStore = await cookies();
+  const sessionId = cookieStore.get('session_id')?.value;
+  const customSession = sessionId ? await db.getSession(sessionId) : null;
+
+  // Check for NextAuth Session
+  const nextAuthSession = await getServerSession(authOptions);
+
+  const isLoggedIn = !!customSession || !!nextAuthSession;
+
   return (
     <div className="space-y-16">
       <section className="bg-[var(--ak-bg-soft)]">
@@ -114,7 +129,7 @@ export default function Home() {
             </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {recipes.slice(0, 4).map((recipe, index) => (
+            {recipes.map((recipe, index) => (
               <RecipeCard key={recipe.id} recipe={recipe} priority={index < 2} />
             ))}
         </div>
@@ -167,9 +182,11 @@ export default function Home() {
                       Join our community of home cooks and explore thousands of traditional Indian recipes.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Link href="/signin" className="bg-white text-[var(--ak-primary)] px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition">
-                          Join for Free
-                      </Link>
+                      {!isLoggedIn && (
+                        <Link href="/signin" className="bg-white text-[var(--ak-primary)] px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition">
+                            Join for Free
+                        </Link>
+                      )}
                       <Link href="/search" className="bg-orange-700 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-800 transition">
                           Search Recipes
                       </Link>

@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 interface User {
   id: string;
@@ -25,6 +26,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     checkAuth();
@@ -83,6 +85,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await signOut({ redirect: false });
     await fetch('/api/auth/logout', { method: 'POST' });
     setUser(null);
+    router.refresh();
   };
 
   return (

@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export', // Disabled to support API routes and Database
+  reactStrictMode: true,
+  poweredByHeader: false,
+  compress: true,
+  output: 'standalone', // Optimized for Node.js hosting (Hostinger)
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [

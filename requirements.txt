@@ -1,0 +1,8 @@
+@google/generative-ai^0.24.1
+framer-motion^12.31.0
+lucide-react^0.563.0
+next16.1.5
+next-auth^4.24.13
+react19.2.3
+react-dom19.2.3
+sharp^0.34.5

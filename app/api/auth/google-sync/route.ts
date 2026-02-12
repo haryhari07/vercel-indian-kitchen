@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const email = session.user.email;
     const name = session.user.name || 'Google User';
 
-    let user = db.findUserByEmail(email);
+    let user = await db.findUserByEmail(email);
 
     if (user && user.status === 'blocked') {
       return NextResponse.json({ error: 'Your account has been blocked.' }, { status: 403 });
@@ -26,11 +26,11 @@ export async function POST(request: NextRequest) {
       // Create new user for Google login
       // Generate a random password since they use Google to login
       const randomPassword = crypto.randomBytes(16).toString('hex');
-      user = db.createUser(email, randomPassword, name);
+      user = await db.createUser(email, randomPassword, name);
     }
 
     // Create session for our app
-    const appSession = db.createSession(user.id);
+    const appSession = await db.createSession(user.id);
 
     // Set cookie
     const response = NextResponse.json({ success: true, user });

@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Indian Kitchen
 
-## Getting Started
+Indian Kitchen is a modern Next.js application for exploring authentic Indian recipes. It features AI-powered recipe generation, user authentication, and a responsive design optimized for performance.
 
-First, run the development server:
+## 1. System Prerequisites
+Before running the project, ensure you have the following installed:
+- **Node.js**: Version 18.17.0 or higher (Required for Next.js 14+)
+- **npm**: Version 9.0.0 or higher (or yarn/pnpm/bun)
+- **Operating System**: Windows, macOS, or Linux
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 2. Environment Variables
+Create a `.env` file in the root directory with the following keys. These are required for full functionality (Authentication and AI features).
+
+```env
+# Google Authentication (NextAuth.js)
+GOOGLE_CLIENT_ID=your_google_client_id_here
+GOOGLE_CLIENT_SECRET=your_google_client_secret_here
+
+# NextAuth Configuration
+# Run `openssl rand -base64 32` to generate a secret
+NEXTAUTH_SECRET=your_nextauth_secret_here
+NEXTAUTH_URL=http://localhost:3000
+
+# Google Gemini AI (Recipe Genie)
+# Get API key from: https://aistudio.google.com/
+GOOGLE_GEMINI_API_KEY=your_gemini_api_key_here
+# Fallback key name if above is not set
+GOOGLE_API_KEY=your_backup_api_key_here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 3. Tech Stack & Key Dependencies
+The project uses the following core technologies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Core Framework
+- **Next.js 16.1**: App Router, Server Actions, API Routes
+- **React 19**: Server Components, Hooks
+- **TypeScript**: Static typing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Styling & UI
+- **Tailwind CSS v4**: Utility-first CSS
+- **Framer Motion**: Animations (Lazy loaded for performance)
+- **Lucide React**: Icons
 
-## Learn More
+### Backend & Data
+- **NextAuth.js**: Authentication (Google Provider)
+- **LowDB / JSON DB**: Local file-based database (`data/db.json`)
+- **Google Generative AI**: Gemini Flash model for Recipe Genie
 
-To learn more about Next.js, take a look at the following resources:
+### Image Optimization
+- **Sharp**: High-performance image processing
+- **next/image**: AVIF/WebP formats, lazy loading
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 4. Installation & Running
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Access the app at `http://localhost:3000`.
 
-## Deploy on Vercel
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    npm start
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 5. Project Structure & Features
+- **`app/`**: Next.js App Router pages and API endpoints.
+    - `genie/`: AI Recipe Generator.
+    - `admin/`: Admin dashboard (protected).
+    - `(auth)`: Signin/Signup pages.
+- **`data/`**: Static data (`recipes.ts`) and database file (`db.json`).
+- **`lib/`**: Helper functions (`db.ts`, `auth.ts`).
+- **`components/`**: Reusable UI components.
+- **`public/`**: Static assets (images, icons).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 6. Security Features
+- **CSP (Content Security Policy)**: Implemented in `middleware.ts`.
+- **Secure Headers**: HSTS, X-Frame-Options, X-Content-Type-Options.
+- **Password Hashing**: Scrypt (salted) for admin users.
+- **Role-Based Access**: Admin middleware protection.
+
+## 7. Utility Scripts
+Located in `scripts/`:
+- `add_ratings.js`: Seeding rating data.
+- `download_images.mjs`: Fetching placeholders.
+- `update_recipes.mjs`: Batch updating recipe data.

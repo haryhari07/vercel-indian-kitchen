@@ -4,13 +4,14 @@ import Image from 'next/image';
 import { db, Recipe } from '@/lib/db';
 import RecipeCard from './RecipeCard';
 
-export default function SimilarRecipes({ currentRecipe }: { currentRecipe: Recipe }) {
+export default async function SimilarRecipes({ currentRecipe }: { currentRecipe: Recipe }) {
   // Logic to find similar recipes:
   // 1. Same state
   // 2. Overlapping dietary tags
   // 3. Exclude current recipe
   
-  const recipes = db.getRecipes();
+  const allRecipes = await db.getRecipes();
+  const recipes = Array.isArray(allRecipes) ? allRecipes : [];
 
   const similar = recipes
     .filter(r => r.slug !== currentRecipe.slug)

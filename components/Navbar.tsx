@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useMemo, useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { recipes, states } from '@/data/recipes';
+import { Recipe, State } from '@/data/types';
 import { useAuth } from '@/context/AuthContext';
 
 export default function Navbar() {
@@ -15,22 +15,28 @@ export default function Navbar() {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
+  const [results, setResults] = useState<{ recipeMatches: Recipe[], stateMatches: State[] }>({ recipeMatches: [], stateMatches: [] });
 
-  const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return { recipeMatches: [], stateMatches: [] };
-    const recipeMatches = recipes.filter(
-      r =>
-        r.title.toLowerCase().includes(q) ||
-        r.description.toLowerCase().includes(q) ||
-        r.state.toLowerCase().includes(q)
-    ).slice(0, 5);
-    const stateMatches = states.filter(
-      s =>
-        s.name.toLowerCase().includes(q) ||
-        s.region.toLowerCase().includes(q)
-    ).slice(0, 5);
-    return { recipeMatches, stateMatches };
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      const q = query.trim();
+      if (!q) {
+        setResults({ recipeMatches: [], stateMatches: [] });
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+        if (res.ok) {
+          const data = await res.json();
+          setResults(data);
+        }
+      } catch (error) {
+        console.error('Search failed', error);
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
   }, [query]);
 
   useEffect(() => {

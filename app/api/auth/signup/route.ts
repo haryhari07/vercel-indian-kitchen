@@ -10,12 +10,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing email or password' }, { status: 400 });
     }
 
-    if (db.findUserByEmail(email)) {
+    if (await db.findUserByEmail(email)) {
       return NextResponse.json({ error: 'User already exists' }, { status: 409 });
     }
 
-    const user = db.createUser(email, password, name);
-    const session = db.createSession(user.id);
+    const user = await db.createUser(email, password, name);
+    const session = await db.createSession(user.id);
 
     (await cookies()).set('session_id', session.id, {
       httpOnly: true,

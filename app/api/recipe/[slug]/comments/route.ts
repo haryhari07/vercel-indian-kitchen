@@ -10,7 +10,7 @@ interface Props {
 export async function GET(request: Request, { params }: Props) {
   try {
     const { slug } = await params;
-    const comments = db.getComments(slug);
+    const comments = await db.getComments(slug);
     return NextResponse.json({ comments });
   } catch (error) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
@@ -33,12 +33,12 @@ export async function POST(request: Request, { params }: Props) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const session = db.getSession(sessionId);
+    const session = await db.getSession(sessionId);
     if (!session) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const newComment = db.addComment(session.userId, slug, content);
+    const newComment = await db.addComment(session.userId, slug, content);
     return NextResponse.json({ comment: newComment });
   } catch (error) {
     console.error('Comment error:', error);

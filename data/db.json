@@ -29,24 +29,14 @@
   ],
   "sessions": [
     {
-      "id": "3b268f52-ab03-4adf-834a-987f704d030a",
-      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
-      "expiresAt": "2026-02-04T11:35:49.324Z"
+      "id": "286f9070-7812-4c84-b61a-de5245dbe9bd",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "expiresAt": "2026-02-19T07:54:05.725Z"
     },
     {
-      "id": "ca0988b9-a05a-4835-ae79-a7fbf86a318d",
-      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
-      "expiresAt": "2026-02-07T07:25:20.760Z"
-    },
-    {
-      "id": "418e55a0-a6d5-4975-bb8a-d7884c72a90a",
-      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
-      "expiresAt": "2026-02-07T09:20:43.117Z"
-    },
-    {
-      "id": "f845d892-2dd4-445a-92b5-e3fcef063f7f",
-      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
-      "expiresAt": "2026-02-10T18:33:05.527Z"
+      "id": "1e689abf-37fb-492d-91dd-a6e63fb13179",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "expiresAt": "2026-02-19T07:54:05.743Z"
     }
   ],
   "ratings": [
@@ -58,7 +48,18 @@
       "timestamp": "2026-01-31T06:04:03.969Z"
     }
   ],
-  "bookmarks": [],
+  "bookmarks": [
+    {
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "recipeSlug": "palak-paneer",
+      "timestamp": "2026-02-03T18:52:22.340Z"
+    },
+    {
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "recipeSlug": "samosa",
+      "timestamp": "2026-02-03T18:52:23.474Z"
+    }
+  ],
   "activities": [
     {
       "id": "1b2ddeaa-7a3b-47c5-8caa-86cae71bce92",
@@ -201,6 +202,169 @@
       "type": "login",
       "details": "User logged in",
       "timestamp": "2026-02-03T18:33:05.527Z"
+    },
+    {
+      "id": "24548872-f08a-4002-b6c9-6c5618410951",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T18:51:54.329Z"
+    },
+    {
+      "id": "19f37f80-4dc0-49e1-bade-66320676ca8b",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T18:52:04.065Z"
+    },
+    {
+      "id": "a7bbef4b-edbe-43b5-a0d9-6bcf4f93a64d",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "bookmark",
+      "targetSlug": "palak-paneer",
+      "details": "Bookmarked recipe palak-paneer",
+      "timestamp": "2026-02-03T18:52:22.340Z"
+    },
+    {
+      "id": "392004ba-95ae-421a-a43e-fff575011096",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "bookmark",
+      "targetSlug": "samosa",
+      "details": "Bookmarked recipe samosa",
+      "timestamp": "2026-02-03T18:52:23.474Z"
+    },
+    {
+      "id": "869774eb-6e67-41bc-9224-09dcc54be11d",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T19:15:59.406Z"
+    },
+    {
+      "id": "4a63a70e-6bbc-471f-a0b5-c88cdbdf296a",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T19:16:22.357Z"
+    },
+    {
+      "id": "9c52ecc5-6dd3-41d0-93dc-64e9f39f6dd9",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T19:16:30.970Z"
+    },
+    {
+      "id": "eec87bb4-ae97-4312-852d-41588c4ccdbb",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T19:18:48.173Z"
+    },
+    {
+      "id": "b9cee516-59c6-4263-8f13-7515c56d2acc",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T19:18:56.941Z"
+    },
+    {
+      "id": "5d918ea3-12d9-48c2-8ddb-4235d7585ec6",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T19:21:20.409Z"
+    },
+    {
+      "id": "8f26f1b7-e2c6-49ba-aac0-cb165b86405e",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-03T19:21:41.622Z"
+    },
+    {
+      "id": "f8921fbc-a471-4714-970a-e5b5e33bd5d7",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-03T19:26:41.480Z"
+    },
+    {
+      "id": "2a6312b4-3b34-4006-ae85-dbf7502efde4",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-04T01:47:33.376Z"
+    },
+    {
+      "id": "72f38161-b51b-4147-a9f2-8a675477df3c",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-06T03:25:21.509Z"
+    },
+    {
+      "id": "1aca92ce-f6ce-443d-9537-b2265908861b",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-06T03:26:22.086Z"
+    },
+    {
+      "id": "ad4d2018-28cc-4aa7-a3a4-b86ae3ce258f",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-11T00:48:39.885Z"
+    },
+    {
+      "id": "f401232f-03b0-40d1-8e31-47df6c224f7e",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-11T00:52:31.807Z"
+    },
+    {
+      "id": "a8432083-0664-42fd-b317-b62a8915e231",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-11T00:55:05.283Z"
+    },
+    {
+      "id": "c1a4a4e5-6861-4a10-82a9-e588c9494cd1",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-11T03:20:14.916Z"
+    },
+    {
+      "id": "9e4b2160-ccf3-45e9-99ce-7412f3cbb2a2",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-12T07:51:41.196Z"
+    },
+    {
+      "id": "cd58ddf9-9501-4b5f-8568-8091bf92e919",
+      "userId": "1be332ea-b55e-48cc-8803-ec5421c60489",
+      "type": "login",
+      "details": "User logged out",
+      "timestamp": "2026-02-12T07:53:46.175Z"
+    },
+    {
+      "id": "69502aac-9d5a-4b03-96b3-74526debefda",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-12T07:54:05.725Z"
+    },
+    {
+      "id": "49d7c098-773b-421e-9238-60dad8093ec2",
+      "userId": "6cd9ce6c-1fe4-4fcb-9eac-2e97b915636c",
+      "type": "login",
+      "details": "User logged in",
+      "timestamp": "2026-02-12T07:54:05.744Z"
     }
   ],
   "comments": [],
