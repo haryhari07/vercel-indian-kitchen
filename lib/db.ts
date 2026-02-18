@@ -95,14 +95,21 @@ async function connectToDatabase() {
   }
 
   if (!MONGODB_URI) {
+    console.error('CRITICAL: MONGODB_URI is missing from environment variables!');
     throw new Error('MONGODB_URI is not defined');
   }
 
+  console.log('Attempting to connect to MongoDB with URI:', MONGODB_URI.split('@')[1] || 'invalid-uri');
+
   try {
     const client = await MongoClient.connect(MONGODB_URI, {
-      connectTimeoutMS: 5000,
-      socketTimeoutMS: 5000,
+      connectTimeoutMS: 30000,
+      socketTimeoutMS: 30000,
+      serverSelectionTimeoutMS: 30000,
+      family: 4
     });
+    
+    console.log('Successfully connected to MongoDB Atlas');
     const db = client.db(MONGODB_DB);
 
     cachedClient = client;
